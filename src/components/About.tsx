@@ -27,14 +27,14 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <section id="sobre" className="section bg-background">
+      <div className="container">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Sobre a <span className="text-yellow-500">RRestofados</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Sobre a <span className="text-primary">RRestofados</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Somos uma empresa especializada em sofás personalizados, estamos no mercado desde 2020 
             com metas de crescimento, trabalhamos com produtos de alta qualidade para melhor atender 
             todos nossos clientes.
@@ -44,25 +44,21 @@ const About = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="text-center p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <feature.icon className="text-yellow-600" size={32} />
+            <div key={index} className="text-center p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow duration-200">
+              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <feature.icon className="text-primary" size={32} />
               </div>
-              <h3 className="text-xl font-semibold text-black mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-card-foreground mb-3">{feature.title}</h3>
+              <p className="text-muted-foreground">{feature.description}</p>
             </div>
           ))}
         </div>
 
         {/* Story Section */}
-        <div className="bg-gradient-to-r from-black to-gray-900 rounded-2xl p-8 md:p-12 text-white">
+        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              Nossa <span className="text-yellow-500">História</span>
+              Nossa <span className="text-primary">História</span>
             </h3>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
               Fundada em 2020, a RRestofados nasceu com o objetivo de transformar ambientes através 
@@ -72,15 +68,15 @@ const About = () => {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-yellow-500 mb-2">500+</div>
+                <div className="text-4xl font-bold text-primary mb-2">500+</div>
                 <p className="text-gray-300">Sofás Produzidos</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-yellow-500 mb-2">100%</div>
+                <div className="text-4xl font-bold text-primary mb-2">100%</div>
                 <p className="text-gray-300">Satisfação</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-yellow-500 mb-2">4+</div>
+                <div className="text-4xl font-bold text-primary mb-2">4+</div>
                 <p className="text-gray-300">Anos de Experiência</p>
               </div>
             </div>

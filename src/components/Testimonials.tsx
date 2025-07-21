@@ -31,14 +31,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <section id="depoimentos" className="section bg-muted/50">
+      <div className="container">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            O que Nossos <span className="text-yellow-500">Clientes</span> Dizem
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            O que Nossos <span className="text-primary">Clientes</span> Dizem
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A satisfação dos nossos clientes é nossa maior recompensa. 
             Veja o que eles falam sobre nossos serviços.
           </p>
@@ -47,27 +47,23 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+            <div key={index} className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200 border">
               <div className="flex items-center mb-4">
-                <Quote className="text-yellow-500 mr-2" size={20} />
+                <Quote className="text-primary mr-2" size={20} />
                 <div className="flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="text-yellow-500 fill-current" size={16} />
+                    <Star key={i} className="text-primary fill-current" size={16} />
                   ))}
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-6 text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
                 "{testimonial.text}"
               </p>
               
               <div className="border-t pt-4">
-                <div className="font-semibold text-black">{testimonial.name}</div>
-                <div className="text-sm text-gray-500">{testimonial.location}</div>
+                <div className="font-semibold text-card-foreground">{testimonial.name}</div>
+                <div className="text-sm text-muted-foreground">{testimonial.location}</div>
               </div>
             </div>
           ))}
@@ -75,9 +71,9 @@ const Testimonials = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-black to-gray-900 rounded-2xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Quer Ser Nosso Próximo <span className="text-yellow-500">Cliente Satisfeito?</span>
+              Quer Ser Nosso Próximo <span className="text-primary">Cliente Satisfeito?</span>
             </h3>
             <p className="text-xl mb-8 text-gray-300">
               Junte-se a centenas de clientes que já transformaram seus ambientes conosco.
@@ -86,7 +82,7 @@ const Testimonials = () => {
               href="https://wa.me/5514998473439" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              className="btn-primary inline-flex items-center gap-2"
             >
               Começar Meu Projeto
             </a>
