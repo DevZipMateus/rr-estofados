@@ -13,7 +13,7 @@ const Hero = () => {
           {/* Content */}
           <div className="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
             <h1 className={`${isMobile ? 'text-4xl' : 'text-5xl lg:text-6xl'} font-bold text-white leading-tight mb-6`}>
-              Sofás <span className="text-primary">Personalizados</span> de Alta Qualidade
+              Sofás <span className="text-orange-500">Personalizados</span> de Alta Qualidade
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 max-w-2xl">
@@ -25,14 +25,14 @@ const Hero = () => {
                 href="https://wa.me/5514998473439" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn-primary flex items-center justify-center gap-2"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <Phone size={20} />
                 Solicitar Orçamento
               </a>
               <a 
                 href="#servicos" 
-                className="btn-secondary flex items-center justify-center gap-2"
+                className="bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 Nossos Serviços
                 <ArrowRight size={20} />
@@ -43,15 +43,13 @@ const Hero = () => {
           {/* Image/Visual */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full"></div>
+              <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-orange-500/20 to-orange-500/10 rounded-full"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-6xl lg:text-8xl font-bold mb-4">
-                    <span className="text-primary">R</span>R
-                  </div>
-                  <p className="text-xl lg:text-2xl font-semibold">Restofados</p>
-                  <p className="text-gray-300 mt-2">Sofás Personalizados</p>
-                </div>
+                <img 
+                  src="/lovable-uploads/64ffa4fb-3b87-41c6-bd20-23c4e5f86478.png" 
+                  alt="RR Estofados - Logo" 
+                  className="w-48 h-48 lg:w-64 lg:h-64 object-contain"
+                />
               </div>
             </div>
           </div>

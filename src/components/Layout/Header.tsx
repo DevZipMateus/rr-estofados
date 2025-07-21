@@ -38,44 +38,49 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-white py-4'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-white py-3'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-black">
-              <span className="text-yellow-500">R</span>Restofados
+            <img 
+              src="/lovable-uploads/64ffa4fb-3b87-41c6-bd20-23c4e5f86478.png" 
+              alt="RR Estofados - Logo" 
+              className={`${isMobile ? 'h-12 w-12' : 'h-14 w-14'} transition-all duration-300`}
+            />
+            <h1 className={`${isMobile ? 'text-xl' : 'text-2xl'} font-bold text-black ml-3`}>
+              <span className="text-orange-500">RR</span> Estofados
             </h1>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#inicio" onClick={(e) => handleNavClick(e, '#inicio')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#inicio" onClick={(e) => handleNavClick(e, '#inicio')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Início
             </a>
-            <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Sobre
             </a>
-            <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Serviços
             </a>
-            <a href="#planos" onClick={(e) => handleNavClick(e, '#planos')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#planos" onClick={(e) => handleNavClick(e, '#planos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Planos
             </a>
-            <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Depoimentos
             </a>
-            <a href="#localizacao" onClick={(e) => handleNavClick(e, '#localizacao')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#localizacao" onClick={(e) => handleNavClick(e, '#localizacao')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Localização
             </a>
-            <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="text-gray-700 hover:text-yellow-500 transition-colors duration-300 font-medium">
+            <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Contato
             </a>
           </nav>
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-700 hover:text-yellow-500 focus:outline-none"
+            className="md:hidden text-gray-700 hover:text-orange-500 focus:outline-none"
             onClick={toggleMobileMenu}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -86,25 +91,25 @@ const Header = () => {
       {/* Mobile Navigation Menu */}
       <div className={`md:hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-300 ease-in-out bg-white border-t`}>
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-3">
-          <a href="#inicio" onClick={(e) => handleNavClick(e, '#inicio')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#inicio" onClick={(e) => handleNavClick(e, '#inicio')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Início
           </a>
-          <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Sobre
           </a>
-          <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Serviços
           </a>
-          <a href="#planos" onClick={(e) => handleNavClick(e, '#planos')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#planos" onClick={(e) => handleNavClick(e, '#planos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Planos
           </a>
-          <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Depoimentos
           </a>
-          <a href="#localizacao" onClick={(e) => handleNavClick(e, '#localizacao')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#localizacao" onClick={(e) => handleNavClick(e, '#localizacao')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Localização
           </a>
-          <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="px-4 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Contato
           </a>
         </div>
