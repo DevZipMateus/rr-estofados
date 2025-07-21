@@ -1,133 +1,95 @@
 
-import React, { useState } from 'react';
-import { Star, ArrowLeft, ArrowRight } from 'lucide-react';
-
-const testimonials = [
-  {
-    id: 1,
-    name: 'Elina Santos',
-    position: 'Diretora da BJT Transportadora',
-    content: 'A ContaPlus tem se mostrado extremamente pontual na entrega de documentos e o suporte é sempre atencioso. Recomendo a todos que procuram um serviço contábil confiável.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
-  },
-  {
-    id: 2,
-    name: 'Joel Gomes',
-    position: 'Administrador da Torque Implementos',
-    content: 'O comprometimento da equipe da ContaPlus com a satisfação do cliente é notável. Eles sempre atendem às necessidades da nossa empresa com excelência e profissionalismo.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
-  },
-  {
-    id: 3,
-    name: 'João Meneses',
-    position: 'Diretor da Ágil Mecânica',
-    content: 'O atendimento da ContaPlus é prestativo, sempre esclarecendo nossas dúvidas. Os serviços prestados são excelentes e nos ajudam a manter nosso negócio em ordem.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
-  }
-];
+import React from 'react';
+import { Star, Quote } from 'lucide-react';
 
 const Testimonials = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  
-  const nextTestimonial = () => {
-    setActiveIndex((prev) => (prev + 1) % testimonials.length);
-  };
-  
-  const prevTestimonial = () => {
-    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-  
+  const testimonials = [
+    {
+      name: "Maria Silva",
+      location: "Bauru - SP",
+      text: "Simplesmente perfeito! O sofá ficou exatamente como eu sonhava. A qualidade é excepcional e o atendimento foi impecável desde o primeiro contato.",
+      rating: 5
+    },
+    {
+      name: "João Santos",
+      location: "Marília - SP",
+      text: "Reformaram meu sofá antigo e o resultado foi incrível! Ficou como novo, com um acabamento profissional. Recomendo de olhos fechados.",
+      rating: 5
+    },
+    {
+      name: "Ana Costa",
+      location: "Lençóis Paulista - SP",
+      text: "Excelente trabalho! Criaram um sofá personalizado que se encaixou perfeitamente no meu ambiente. Entrega no prazo e montagem perfeita.",
+      rating: 5
+    },
+    {
+      name: "Carlos Oliveira",
+      location: "Jaú - SP",
+      text: "Qualidade superior em materiais e acabamento. O sofá está há 2 anos em casa e continua como novo. Investimento que vale muito a pena!",
+      rating: 5
+    }
+  ];
+
   return (
-    <section className="section bg-white">
-      <div className="container-custom">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
-            Depoimentos
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            O que nossos clientes dizem
+    <section id="depoimentos" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            O que Nossos <span className="text-yellow-500">Clientes</span> Dizem
           </h2>
-          <p className="text-gray-600 text-lg">
-            Conheça a experiência de quem já utiliza nossos serviços e confia em nossa expertise.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            A satisfação dos nossos clientes é nossa maior recompensa. 
+            Veja o que eles falam sobre nossos serviços.
           </p>
         </div>
-        
-        {/* Testimonials Carousel */}
-        <div className="max-w-4xl mx-auto relative">
-          {/* Testimonial Card */}
-          <div 
-            className="relative bg-white rounded-xl p-8 md:p-10 shadow-sm animate-fade-in"
-            key={testimonials[activeIndex].id}
-          >
-            {/* Quotation Mark */}
-            <div className="absolute -top-6 left-8 text-6xl text-corporate-blue/20">"</div>
-            
-            {/* Content */}
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* Avatar */}
-              <div className="md:w-1/4 flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
-                  <img 
-                    src={testimonials[activeIndex].image} 
-                    alt={testimonials[activeIndex].name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 text-center">{testimonials[activeIndex].name}</h4>
-                <p className="text-sm text-gray-600 text-center">{testimonials[activeIndex].position}</p>
-                
-                {/* Rating */}
-                <div className="flex justify-center mt-2">
-                  {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
-                    <Star key={i} className="text-yellow-400 fill-current" size={16} />
+
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="flex items-center mb-4">
+                <Quote className="text-yellow-500 mr-2" size={20} />
+                <div className="flex">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="text-yellow-500 fill-current" size={16} />
                   ))}
                 </div>
               </div>
               
-              {/* Testimonial Text */}
-              <div className="md:w-3/4">
-                <p className="text-gray-600 text-lg italic mb-6">
-                  "{testimonials[activeIndex].content}"
-                </p>
+              <p className="text-gray-700 mb-6 text-sm leading-relaxed">
+                "{testimonial.text}"
+              </p>
+              
+              <div className="border-t pt-4">
+                <div className="font-semibold text-black">{testimonial.name}</div>
+                <div className="text-sm text-gray-500">{testimonial.location}</div>
               </div>
             </div>
-          </div>
-          
-          {/* Navigation Buttons */}
-          <div className="flex justify-center mt-8 space-x-4">
-            <button 
-              onClick={prevTestimonial}
-              className="p-2 rounded-full bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue transition-colors duration-300"
-              aria-label="Previous testimonial"
+          ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-black to-gray-900 rounded-2xl p-8 md:p-12 text-white">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Quer Ser Nosso Próximo <span className="text-yellow-500">Cliente Satisfeito?</span>
+            </h3>
+            <p className="text-xl mb-8 text-gray-300">
+              Junte-se a centenas de clientes que já transformaram seus ambientes conosco.
+            </p>
+            <a 
+              href="https://wa.me/5514998473439" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
             >
-              <ArrowLeft size={20} />
-            </button>
-            
-            {/* Indicator Dots */}
-            <div className="flex items-center space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    activeIndex === index ? 'bg-corporate-blue w-6' : 'bg-gray-300'
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
-            
-            <button 
-              onClick={nextTestimonial}
-              className="p-2 rounded-full bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue transition-colors duration-300"
-              aria-label="Next testimonial"
-            >
-              <ArrowRight size={20} />
-            </button>
+              Começar Meu Projeto
+            </a>
           </div>
         </div>
       </div>

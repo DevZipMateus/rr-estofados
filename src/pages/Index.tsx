@@ -3,13 +3,13 @@ import React, { useEffect } from 'react';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import Hero from '../components/Hero';
+import About from '../components/About';
 import Services from '../components/Services';
-import AboutUs from '../components/AboutUs';
-import Team from '../components/Team';
 import Plans from '../components/Plans';
 import Testimonials from '../components/Testimonials';
+import Location from '../components/Location';
 import Contact from '../components/Contact';
-import FloatingButton from '../components/FloatingButton';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 const Index = () => {
   // Scroll to top on page load
@@ -23,16 +23,16 @@ const Index = () => {
       
       <main className="flex-grow">
         <Hero />
+        <About />
         <Services />
-        <AboutUs />
-        <Team />
         <Plans />
         <Testimonials />
+        <Location />
         <Contact />
       </main>
       
       <Footer />
-      <FloatingButton />
+      <FloatingWhatsApp />
     </div>
   );
 };

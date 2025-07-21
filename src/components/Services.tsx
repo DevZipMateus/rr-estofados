@@ -1,82 +1,97 @@
 
 import React from 'react';
-import { FileSpreadsheet, FileCheck, Building2, FileText, ArrowRight } from 'lucide-react';
-
-const services = [
-  {
-    id: 1,
-    title: 'Contabilidade',
-    description: 'Serviços especializados para atender às necessidades legais das empresas, com foco em resultados e eficiência.',
-    icon: FileSpreadsheet,
-    delay: '0s'
-  },
-  {
-    id: 2,
-    title: 'Fiscal',
-    description: 'Assessoria completa para cumprimento de todas as obrigações fiscais, evitando problemas com o fisco.',
-    icon: FileCheck,
-    delay: '0.1s'
-  },
-  {
-    id: 3,
-    title: 'Abertura de Empresa',
-    description: 'Orientação na estruturação societária adequada, visando economia tributária desde o primeiro dia.',
-    icon: Building2,
-    delay: '0.2s'
-  },
-  {
-    id: 4,
-    title: 'Societário',
-    description: 'Serviços relacionados às questões legais junto a órgãos públicos e privados, mantendo sua empresa em dia.',
-    icon: FileText,
-    delay: '0.3s'
-  }
-];
+import { Palette, Wrench, Truck, Shield } from 'lucide-react';
 
 const Services = () => {
+  const services = [
+    {
+      icon: Palette,
+      title: "Design Personalizado",
+      description: "Criamos sofás únicos seguindo seu estilo e necessidades específicas",
+      features: ["Escolha de tecidos premium", "Cores personalizadas", "Medidas sob medida", "Estilo exclusivo"]
+    },
+    {
+      icon: Wrench,
+      title: "Reforma e Restauro",
+      description: "Damos nova vida ao seu sofá antigo com qualidade profissional",
+      features: ["Troca de espuma", "Novo revestimento", "Estrutura reforçada", "Acabamento impecável"]
+    },
+    {
+      icon: Truck,
+      title: "Entrega e Montagem",
+      description: "Levamos seu sofá até você com cuidado e instalação completa",
+      features: ["Entrega gratuita", "Montagem incluída", "Proteção durante transporte", "Horário flexível"]
+    },
+    {
+      icon: Shield,
+      title: "Garantia Total",
+      description: "Oferecemos garantia completa em todos os nossos produtos",
+      features: ["Garantia de 1 ano", "Suporte pós-venda", "Manutenção gratuita", "Peças de reposição"]
+    }
+  ];
+
   return (
-    <section id="services" className="section bg-white">
-      <div className="container-custom">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
-            Nossos Serviços
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Soluções completas para sua empresa
+    <section id="servicos" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            Nossos <span className="text-yellow-500">Serviços</span>
           </h2>
-          <p className="text-gray-600 text-lg">
-            Oferecemos serviços especializados para atender às necessidades específicas do seu negócio, 
-            desde a abertura até a gestão contínua.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Oferecemos uma gama completa de serviços para atender todas as suas necessidades 
+            em estofados e móveis personalizados.
           </p>
         </div>
-        
+
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service, index) => (
             <div 
-              key={service.id} 
-              className="bg-white rounded-lg p-8 border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-300 transform hover:scale-[1.02] animate-fade-in"
-              style={{ animationDelay: service.delay }}
+              key={index} 
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-corporate-blue/10 p-4 rounded-lg inline-block mb-5">
-                <service.icon className="text-corporate-blue" size={28} />
+              <div className="flex items-start mb-6">
+                <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <service.icon className="text-yellow-600" size={32} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-black mb-3">{service.title}</h3>
+                  <p className="text-gray-600 text-lg">{service.description}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              
+              <ul className="space-y-3">
+                {service.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className="flex items-center">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                    <span className="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
-        
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <a 
-            href="#contact" 
-            className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex"
-          >
-            <span>Fale com um especialista</span>
-            <ArrowRight size={18} />
-          </a>
+
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl p-8 md:p-12 text-black">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Pronto para Transformar seu Ambiente?
+            </h3>
+            <p className="text-xl mb-8 opacity-90">
+              Entre em contato conosco e descubra como podemos criar o sofá perfeito para você.
+            </p>
+            <a 
+              href="https://wa.me/5514998473439" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+            >
+              Solicitar Orçamento Gratuito
+            </a>
+          </div>
         </div>
       </div>
     </section>
