@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Location = () => {
@@ -14,8 +15,8 @@ const Location = () => {
           </p>
         </div>
 
-        {/* Three empty location divisions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Four location divisions */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Location 1 */}
           <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px]">
             {/* Conteúdo da localização 1 será adicionado aqui */}
@@ -29,6 +30,11 @@ const Location = () => {
           {/* Location 3 */}
           <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px]">
             {/* Conteúdo da localização 3 será adicionado aqui */}
+          </div>
+
+          {/* Location 4 */}
+          <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px]">
+            {/* Conteúdo da localização 4 será adicionado aqui */}
           </div>
         </div>
       </div>
