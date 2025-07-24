@@ -1,5 +1,6 @@
 
 import React from 'react';
+import LocationMap from './LocationMap';
 
 const Location = () => {
   return (
@@ -17,9 +18,17 @@ const Location = () => {
 
         {/* Four location divisions */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Location 1 */}
+          {/* Location 1 - Mapa */}
           <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px]">
-            {/* Conteúdo da localização 1 será adicionado aqui */}
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-black mb-2">Unidade Bauru</h3>
+              <p className="text-sm text-gray-600">
+                Av. Duque de Caxias, 253 - Vila Mesquita, Bauru - SP, 17014-340
+              </p>
+            </div>
+            <div className="h-48">
+              <LocationMap address="Av. Duque de Caxias, 253 - Vila Mesquita, Bauru - SP, 17014-340" />
+            </div>
           </div>
 
           {/* Location 2 */}
