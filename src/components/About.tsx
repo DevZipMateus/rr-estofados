@@ -29,16 +29,38 @@ const About = () => {
   return (
     <section id="sobre" className="section bg-background">
       <div className="container">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Sobre a <span className="text-primary">RRestofados</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Somos uma empresa especializada em sofás personalizados, estamos no mercado desde 2020 
-            com metas de crescimento, trabalhamos com produtos de alta qualidade para melhor atender 
-            todos nossos clientes.
-          </p>
+        {/* Header and Video Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Left Column - Content */}
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Sobre a <span className="text-primary">RRestofados</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Somos uma empresa especializada em sofás personalizados, estamos no mercado desde 2020 
+              com metas de crescimento, trabalhamos com produtos de alta qualidade para melhor atender 
+              todos nossos clientes.
+            </p>
+          </div>
+
+          {/* Right Column - Video */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-md">
+              <video
+                className="w-full h-auto rounded-lg shadow-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                disablePictureInPicture
+                controlsList="nodownload nofullscreen noremoteplayback"
+                style={{ pointerEvents: 'none' }}
+              >
+                <source src="/lovable-uploads/rr.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
+          </div>
         </div>
 
         {/* Features Grid */}
