@@ -7,8 +7,20 @@ const Hero = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section id="inicio" className="pt-20 pb-16 bg-gradient-to-br from-gray-900 to-gray-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <section 
+      id="inicio" 
+      className="pt-20 pb-16 bg-gradient-to-br from-gray-900/90 to-gray-800/90 relative"
+      style={{
+        backgroundImage: 'url(/lovable-uploads/4fa4f1fb-53f6-472d-9d6c-17aa83142d35.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-gray-800/80"></div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="flex flex-col lg:flex-row items-center min-h-screen">
           {/* Content */}
           <div className="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
