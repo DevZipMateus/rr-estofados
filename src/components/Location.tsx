@@ -36,7 +36,7 @@ const Location = () => {
                 asChild 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <a href="#contato">
+                <a href="https://wa.me/5514362666146?text=Olá! Gostaria de solicitar um orçamento para sofá personalizado." target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="mr-2" size={16} />
                   Entrar em Contato
                 </a>
@@ -44,9 +44,38 @@ const Location = () => {
             </div>
           </div>
 
-          {/* Location 2 */}
-          <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px]">
-            {/* Conteúdo da localização 2 será adicionado aqui */}
+          {/* Location 2 - Novo mapa */}
+          <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px] flex flex-col">
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-black mb-2">Unidade 2</h3>
+              <p className="text-sm text-gray-600">
+                Localização adicional
+              </p>
+            </div>
+            <div className="h-48 mb-4">
+              <iframe
+                src="https://maps.app.goo.gl/VSn416hkhGtNAm2S9?g_st=iw"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+                title="Mapa da Unidade 2"
+              />
+            </div>
+            <div className="mt-auto">
+              <Button 
+                asChild 
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                <a href="https://wa.me/5514362666146?text=Olá! Gostaria de solicitar um orçamento para sofá personalizado." target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2" size={16} />
+                  Entrar em Contato
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Location 3 */}
