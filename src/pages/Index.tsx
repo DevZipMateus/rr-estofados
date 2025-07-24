@@ -5,6 +5,7 @@ import Footer from '../components/Layout/Footer';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
+import ProductShowcase from '../components/ProductShowcase';
 import Testimonials from '../components/Testimonials';
 import Instagram from '../components/Instagram';
 import BauruUnit from '../components/BauruUnit';
@@ -28,6 +29,7 @@ const Index = () => {
         <Hero />
         <About />
         <Services />
+        <ProductShowcase />
         <Testimonials />
         <Instagram />
         <BauruUnit />
