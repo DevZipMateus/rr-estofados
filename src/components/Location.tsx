@@ -44,26 +44,16 @@ const Location = () => {
             </div>
           </div>
 
-          {/* Location 2 - Novo mapa */}
+          {/* Location 2 - Jaú */}
           <div className="bg-gray-50 rounded-2xl p-8 min-h-[300px] flex flex-col">
             <div className="mb-4">
-              <h3 className="text-lg font-semibold text-black mb-2">Unidade 2</h3>
+              <h3 className="text-lg font-semibold text-black mb-2">Unidade Jaú</h3>
               <p className="text-sm text-gray-600">
-                Localização adicional
+                Av. João Ferraz Neto, N°54 - Chacara Dr. Lopes, Jaú - SP, 17207-330
               </p>
             </div>
             <div className="h-48 mb-4">
-              <iframe
-                src="https://maps.app.goo.gl/VSn416hkhGtNAm2S9?g_st=iw"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg"
-                title="Mapa da Unidade 2"
-              />
+              <LocationMap address="Av. João Ferraz Neto, N°54 - Chacara Dr. Lopes, Jaú - SP, 17207-330" />
             </div>
             <div className="mt-auto">
               <Button 
