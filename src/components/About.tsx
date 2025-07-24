@@ -58,9 +58,9 @@ const About = () => {
         <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              Nossa <span className="text-primary">História</span>
+              Nossa <span className="text-white">História</span>
             </h3>
-            <p className="text-lg md:text-xl text-slate-100 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-white mb-8 leading-relaxed">
               Fundada em 2020, a RRestofados nasceu com o objetivo de transformar ambientes através 
               de sofás únicos e personalizados. Nossa paixão por criar móveis de qualidade superior 
               nos levou a estabelecer parcerias com os melhores fornecedores e a desenvolver técnicas 
@@ -68,16 +68,16 @@ const About = () => {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <p className="text-slate-200">Sofás Produzidos</p>
+                <div className="text-4xl font-bold text-white mb-2">500+</div>
+                <p className="text-white">Sofás Produzidos</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                <p className="text-slate-200">Satisfação</p>
+                <div className="text-4xl font-bold text-white mb-2">100%</div>
+                <p className="text-white">Satisfação</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">4+</div>
-                <p className="text-slate-200">Anos de Experiência</p>
+                <div className="text-4xl font-bold text-white mb-2">4+</div>
+                <p className="text-white">Anos de Experiência</p>
               </div>
             </div>
           </div>
