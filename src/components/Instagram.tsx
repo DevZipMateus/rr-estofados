@@ -23,7 +23,7 @@ const Instagram = () => {
           <div className="max-w-2xl mx-auto">
             <InstagramIcon className="w-16 h-16 mx-auto mb-6" />
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              @rrestofados
+              @rrestofados_sofasbauru
             </h3>
             <p className="text-lg md:text-xl mb-8 opacity-90">
               Não perca nenhuma novidade! Siga-nos no Instagram e veja nossos trabalhos mais recentes, 
@@ -32,7 +32,7 @@ const Instagram = () => {
             <Button 
               size="lg" 
               className="bg-white text-pink-500 hover:bg-gray-100 font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://instagram.com/rrestofados', '_blank')}
+              onClick={() => window.open('https://www.instagram.com/rrestofados_sofasbauru?igsh=bGtsbDd3bTU4cjNi&utm_source=qr', '_blank')}
             >
               <InstagramIcon className="w-5 h-5 mr-2" />
               Seguir no Instagram
