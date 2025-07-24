@@ -9,6 +9,7 @@ import Plans from '../components/Plans';
 import Testimonials from '../components/Testimonials';
 import BauruUnit from '../components/BauruUnit';
 import JauUnit from '../components/JauUnit';
+import LencoisUnit from '../components/LencoisUnit';
 import Contact from '../components/Contact';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
@@ -30,6 +31,7 @@ const Index = () => {
         <Testimonials />
         <BauruUnit />
         <JauUnit />
+        <LencoisUnit />
         <Contact />
       </main>
       
