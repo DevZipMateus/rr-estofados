@@ -1,72 +1,33 @@
 
-import React, { useEffect, useRef, useState } from 'react';
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import React from 'react';
 
 interface LocationMapProps {
   address: string;
 }
 
 const LocationMap: React.FC<LocationMapProps> = ({ address }) => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<mapboxgl.Map | null>(null);
-  const [mapboxToken, setMapboxToken] = useState('');
-
-  useEffect(() => {
-    if (!mapContainer.current || !mapboxToken) return;
-
-    // Initialize map
-    mapboxgl.accessToken = mapboxToken;
-    
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-49.0743, -22.3159], // Coordenadas aproximadas de Bauru - SP
-      zoom: 15,
-    });
-
-    // Add marker for the location
-    new mapboxgl.Marker({
-      color: '#eab308' // yellow-500 to match the design
-    })
-      .setLngLat([-49.0743, -22.3159])
-      .addTo(map.current);
-
-    // Add navigation controls
-    map.current.addControl(
-      new mapboxgl.NavigationControl(),
-      'top-right'
-    );
-
-    // Cleanup
-    return () => {
-      map.current?.remove();
-    };
-  }, [mapboxToken]);
-
-  if (!mapboxToken) {
-    return (
-      <div className="w-full h-full flex flex-col items-center justify-center space-y-4">
-        <p className="text-sm text-gray-600 text-center">
-          Para visualizar o mapa, insira seu token público do Mapbox:
-        </p>
-        <input
-          type="text"
-          placeholder="Token público do Mapbox"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm"
-          value={mapboxToken}
-          onChange={(e) => setMapboxToken(e.target.value)}
-        />
-        <p className="text-xs text-gray-500 text-center">
-          Obtenha seu token em: <a href="https://mapbox.com/" target="_blank" className="text-yellow-500 hover:underline">mapbox.com</a>
-        </p>
-      </div>
-    );
-  }
+  // Encode the address for the Google Maps embed URL
+  const encodedAddress = encodeURIComponent(address);
+  
+  // Google Maps embed URL
+  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodedAddress}`;
+  
+  // For now, we'll use the search URL which doesn't require an API key
+  const searchUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.8947385902456!2d-49.076743!3d-22.315940!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67c2b4d1c5c7%3A0x1e5b4b4b4b4b4b4b!2sAv.%20Duque%20de%20Caxias%2C%20253%20-%20Vila%20Mesquita%2C%20Bauru%20-%20SP%2C%2017014-340!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr`;
 
   return (
     <div className="w-full h-full">
-      <div ref={mapContainer} className="w-full h-full rounded-lg" />
+      <iframe
+        src={searchUrl}
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="rounded-lg"
+        title={`Mapa da localização: ${address}`}
+      />
     </div>
   );
 };
