@@ -34,7 +34,7 @@ const BauruUnit = () => {
           <div className="order-2 lg:order-1">
             <div className="bg-card rounded-2xl p-2 shadow-lg border overflow-hidden">
               <iframe
-                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.123456789!2d-49.0123456!3d-22.3123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzQ0LjQiUyA0OcKwMDAnNDQuNCJX!5e0!3m2!1sen!2sbr!4v1234567890123!5m2!1sen!2sbr&q=${encodedAddress}`}
+                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.5!2d-49.0870!3d-22.3145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67b6a7b5e5b1%3A0x123456789abcdef0!2sAv.%20Duque%20de%20Caxias%2C%20253%20-%20Vila%20Mesquita%2C%20Bauru%20-%20SP%2C%2017014-340!5e0!3m2!1spt-BR!2sbr!4v1640995200000!5m2!1spt-BR!2sbr`}
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
