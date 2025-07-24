@@ -64,13 +64,10 @@ const Header = () => {
             <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Serviços
             </a>
-            <a href="#planos" onClick={(e) => handleNavClick(e, '#planos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
-              Planos
-            </a>
             <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Depoimentos
             </a>
-            <a href="#localizacao" onClick={(e) => handleNavClick(e, '#localizacao')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
+            <a href="#unidade-bauru" onClick={(e) => handleNavClick(e, '#unidade-bauru')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
               Localização
             </a>
             <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">
@@ -100,13 +97,10 @@ const Header = () => {
           <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Serviços
           </a>
-          <a href="#planos" onClick={(e) => handleNavClick(e, '#planos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
-            Planos
-          </a>
           <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Depoimentos
           </a>
-          <a href="#localizacao" onClick={(e) => handleNavClick(e, '#localizacao')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
+          <a href="#unidade-bauru" onClick={(e) => handleNavClick(e, '#unidade-bauru')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
             Localização
           </a>
           <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors">
