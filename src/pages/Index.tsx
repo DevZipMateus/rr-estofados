@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
+import Instagram from '../components/Instagram';
 import BauruUnit from '../components/BauruUnit';
 import JauUnit from '../components/JauUnit';
 import LencoisUnit from '../components/LencoisUnit';
@@ -28,6 +29,7 @@ const Index = () => {
         <About />
         <Services />
         <Testimonials />
+        <Instagram />
         <BauruUnit />
         <JauUnit />
         <LencoisUnit />
