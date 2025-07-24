@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
@@ -28,47 +28,89 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Contact Information */}
+          {/* Bauru Unit */}
           <div>
-            <h4 className="text-xl font-semibold mb-6">Contato</h4>
-            <ul className="space-y-4">
+            <h4 className="text-xl font-semibold mb-6 text-yellow-500">Unidade Bauru</h4>
+            <ul className="space-y-3 text-sm">
               <li className="flex items-start">
-                <Phone className="mr-3 mt-1 flex-shrink-0 text-yellow-500" size={18} />
+                <MapPin className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
+                <span>Av. Duque de Caxias, 253<br />Vila Mesquita, Bauru - SP</span>
+              </li>
+              <li className="flex items-start">
+                <Phone className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
                 <span>(14) 99847-3439</span>
               </li>
               <li className="flex items-start">
-                <Mail className="mr-3 mt-1 flex-shrink-0 text-yellow-500" size={18} />
-                <span>rrestofados2@hotmail.com</span>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="mr-3 mt-1 flex-shrink-0 text-yellow-500" size={18} />
-                <span>Av Duque de Caxias 253<br />Bauru - SP</span>
+                <Clock className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
+                <div>
+                  <p>Seg-Sex: 8h às 18h</p>
+                  <p>Sáb: 8h às 12h</p>
+                </div>
               </li>
             </ul>
           </div>
-          
-          {/* Hours & Links */}
+
+          {/* Jaú Unit */}
           <div>
-            <h4 className="text-xl font-semibold mb-6">Horário de Funcionamento</h4>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-center">
-                <Clock className="mr-3 text-yellow-500" size={18} />
+            <h4 className="text-xl font-semibold mb-6 text-yellow-500">Unidade Jaú</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start">
+                <MapPin className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
+                <span>Av. João Ferraz Neto, 54<br />Chácara Dr. Lopes, Jaú - SP</span>
+              </li>
+              <li className="flex items-start">
+                <Phone className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
+                <span>(14) 3626-6146</span>
+              </li>
+              <li className="flex items-start">
+                <Clock className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
                 <div>
-                  <p>Segunda a Sexta: 8h às 18h</p>
-                  <p>Sábado: 8h às 14h</p>
-                  <p>Domingo: Fechado</p>
+                  <p>Seg-Sex: 8h às 18h</p>
+                  <p>Sáb: 8h às 12h</p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact & Other Units */}
+          <div>
+            <h4 className="text-xl font-semibold mb-6">Outras Unidades</h4>
             
-            <div className="space-y-2">
-              <h5 className="font-semibold text-yellow-500">Links Rápidos</h5>
-              <ul className="space-y-1">
-                <li><a href="#inicio" className="hover:text-yellow-500 transition-colors">Início</a></li>
-                <li><a href="#sobre" className="hover:text-yellow-500 transition-colors">Sobre</a></li>
-                <li><a href="#servicos" className="hover:text-yellow-500 transition-colors">Serviços</a></li>
-                <li><a href="#contato" className="hover:text-yellow-500 transition-colors">Contato</a></li>
+            {/* Lençóis Paulista */}
+            <div className="mb-6">
+              <h5 className="font-semibold text-yellow-500 mb-2">Lençóis Paulista</h5>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start">
+                  <MapPin className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={14} />
+                  <span>R. Cel. Joaquim Gabriel, 667<br />Centro, Lençóis Paulista - SP</span>
+                </li>
+                <li className="flex items-start">
+                  <Phone className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={14} />
+                  <span>(14) 99781-7532</span>
+                </li>
               </ul>
+            </div>
+
+            {/* Botucatu */}
+            <div>
+              <h5 className="font-semibold text-yellow-500 mb-2">Botucatu</h5>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start">
+                  <MapPin className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={14} />
+                  <span>Av. Leonardo Vilas Boas, 2114<br />Vila Nova Botucatu - SP</span>
+                </li>
+                <li className="flex items-start">
+                  <Phone className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={14} />
+                  <span>(14) 99757-6800</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-6">
+              <div className="flex items-start">
+                <Mail className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
+                <span className="text-sm">rrestofados2@hotmail.com</span>
+              </div>
             </div>
           </div>
         </div>
