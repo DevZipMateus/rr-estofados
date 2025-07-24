@@ -43,8 +43,16 @@ const Hero = () => {
           {/* Image/Visual */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <div className="relative">
+              {/* Orange gradient background circle */}
               <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-orange-500/20 to-orange-500/10 rounded-full"></div>
+              
+              {/* White circle behind logo */}
               <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-48 h-48 lg:w-64 lg:h-64 bg-white rounded-full"></div>
+              </div>
+              
+              {/* Logo */}
+              <div className="absolute inset-0 flex items-center justify-center z-10">
                 <img 
                   src="/lovable-uploads/64ffa4fb-3b87-41c6-bd20-23c4e5f86478.png" 
                   alt="RR Estofados - Logo" 
