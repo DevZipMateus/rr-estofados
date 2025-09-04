@@ -80,41 +80,7 @@ const Contact = () => {
           {/* Contact Options */}
           <div className="space-y-8">
             {/* Quick Contact */}
-            <div className="bg-card rounded-2xl p-8 shadow-lg border">
-              <h3 className="text-2xl font-bold text-card-foreground mb-6">Contato Rápido</h3>
-              
-              <div className="space-y-6">
-                <button onClick={() => setIsStoreSelectorOpen(true)} className="flex items-center p-4 bg-green-50 hover:bg-green-100 rounded-lg transition-colors group border">
-                  <div className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                    <img src="/lovable-uploads/8cc5b6c6-3e8b-4210-b713-311b70357f6f.png" alt="WhatsApp" className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground group-hover:text-green-600">WhatsApp</h4>
-                    <p className="text-muted-foreground">Clique para escolher a loja</p>
-                  </div>
-                </button>
-
-                <a href="tel:+5514998473439" className="flex items-center p-4 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors group border">
-                  <div className="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                    <Phone className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground group-hover:text-orange-600">Telefone</h4>
-                    <p className="text-muted-foreground">(14) 99847-3439</p>
-                  </div>
-                </a>
-
-                <a href="mailto:rrestofados2@hotmail.com" className="flex items-center p-4 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors group border">
-                  <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                    <Mail className="text-primary-foreground" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground group-hover:text-primary">E-mail</h4>
-                    <p className="text-muted-foreground">rrestofados2@hotmail.com</p>
-                  </div>
-                </a>
-              </div>
-            </div>
+            
 
             {/* Call to Action */}
             <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
