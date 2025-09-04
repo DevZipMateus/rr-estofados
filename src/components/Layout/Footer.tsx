@@ -43,8 +43,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <Clock className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
                 <div>
-                  <p>Seg-Sex: 8h às 18h</p>
-                  <p>Sáb: 8h às 12h</p>
+                  <p>Seg-Sex: 9h às 19h</p>
+                  <p>Sáb: 9h às 18h</p>
                 </div>
               </li>
             </ul>

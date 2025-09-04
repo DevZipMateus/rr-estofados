@@ -54,8 +54,8 @@ const LencoisUnit = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Horário de Funcionamento</h4>
                     <div className="text-gray-900 space-y-1">
-                      <p>Segunda à Sexta: 8h às 18h</p>
-                      <p>Sábado: 8h às 12h</p>
+                      <p>Segunda à Sexta: 9h às 19h</p>
+                      <p>Sábado: 9h às 18h</p>
                       <p>Domingo: Fechado</p>
                     </div>
                   </div>
