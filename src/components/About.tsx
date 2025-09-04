@@ -56,7 +56,7 @@ const About = () => {
                 controlsList="nodownload nofullscreen noremoteplayback"
                 style={{ pointerEvents: 'none' }}
               >
-                <source src="/lovable-uploads/rr.mp4" type="video/mp4" />
+                <source src="/lovable-uploads/sofa.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
