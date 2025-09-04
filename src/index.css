@@ -108,6 +108,39 @@
     @apply bg-gradient-to-r from-primary to-[#fc9c22] bg-clip-text text-transparent;
   }
   
+  /* Orange color utilities */
+  .text-orange-500 {
+    color: #fc9c22;
+  }
+  
+  .text-orange-600 {
+    color: #ea8a0f;
+  }
+  
+  .bg-orange-500 {
+    background-color: #fc9c22;
+  }
+  
+  .bg-orange-600 {
+    background-color: #ea8a0f;
+  }
+  
+  .bg-orange-100 {
+    background-color: #fef3e2;
+  }
+  
+  .bg-orange-50 {
+    background-color: #fffbf5;
+  }
+  
+  .border-orange-500 {
+    border-color: #fc9c22;
+  }
+  
+  .hover\:bg-orange-600:hover {
+    background-color: #ea8a0f;
+  }
+  
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out;
   }

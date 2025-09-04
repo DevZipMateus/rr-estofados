@@ -38,7 +38,7 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Nossos <span className="text-yellow-500">Serviços</span>
+            Nossos <span className="text-orange-500">Serviços</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Oferecemos uma gama completa de serviços para atender todas as suas necessidades 
@@ -55,8 +55,8 @@ const Services = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start mb-6">
-                <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <service.icon className="text-yellow-600" size={32} />
+                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <service.icon className="text-orange-600" size={32} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-black mb-3">{service.title}</h3>
@@ -67,7 +67,7 @@ const Services = () => {
               <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
@@ -78,7 +78,7 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl p-8 md:p-12 text-black">
+          <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 md:p-12 text-black">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
               Pronto para Transformar seu Ambiente?
             </h3>
@@ -87,7 +87,7 @@ const Services = () => {
             </p>
             <button 
               onClick={() => setIsStoreSelectorOpen(true)}
-              className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              className="bg-white hover:bg-gray-100 text-orange-500 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
             >
               Solicitar Orçamento Gratuito
             </button>

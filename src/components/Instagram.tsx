@@ -9,9 +9,9 @@ const Instagram = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 max-w-7xl 2xl:max-w-[1600px]">
         <div className="text-center mb-12 xl:mb-16 2xl:mb-20">
           <div className="flex items-center justify-center gap-3 mb-6 xl:mb-8">
-            <InstagramIcon className="w-8 h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-pink-500" />
+            <InstagramIcon className="w-8 h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 text-orange-500" />
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-foreground">
-              Siga nosso <span className="text-pink-500">Instagram</span>
+              Siga nosso <span className="text-orange-500">Instagram</span>
             </h2>
           </div>
           <p className="text-lg sm:text-xl md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -19,7 +19,7 @@ const Instagram = () => {
           </p>
         </div>
 
-        <div className="text-center bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-8 md:p-12 xl:p-16 2xl:p-20 text-white">
+        <div className="text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 md:p-12 xl:p-16 2xl:p-20 text-white">
           <div className="max-w-2xl 2xl:max-w-3xl mx-auto">
             <InstagramIcon className="w-16 h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 mx-auto mb-6 xl:mb-8" />
             <h3 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 xl:mb-6">
@@ -31,7 +31,7 @@ const Instagram = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-white text-pink-500 hover:bg-gray-100 font-semibold px-8 py-3 xl:px-10 xl:py-4 2xl:px-12 2xl:py-5 rounded-full transition-all duration-300 hover:scale-105 text-base xl:text-lg 2xl:text-xl"
+              className="bg-white text-orange-500 hover:bg-gray-100 font-semibold px-8 py-3 xl:px-10 xl:py-4 2xl:px-12 2xl:py-5 rounded-full transition-all duration-300 hover:scale-105 text-base xl:text-lg 2xl:text-xl"
               onClick={() => window.open('https://www.instagram.com/rrestofados_sofasbauru?igsh=bGtsbDd3bTU4cjNi&utm_source=qr', '_blank')}
             >
               <InstagramIcon className="w-5 h-5 xl:w-6 xl:h-6 mr-2" />

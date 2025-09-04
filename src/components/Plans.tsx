@@ -56,7 +56,7 @@ const Plans = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Nossos <span className="text-yellow-500">Planos</span>
+            Nossos <span className="text-orange-500">Planos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Escolha o plano que melhor se adapta às suas necessidades e orçamento. 
@@ -71,14 +71,14 @@ const Plans = () => {
               key={index} 
               className={`relative rounded-2xl p-8 transition-all duration-300 hover:shadow-xl animate-fade-in ${
                 plan.popular 
-                  ? 'bg-gradient-to-b from-yellow-50 to-white border-2 border-yellow-500 shadow-lg' 
+                  ? 'bg-gradient-to-b from-orange-50 to-white border-2 border-orange-500 shadow-lg' 
                   : 'bg-white border border-gray-200 shadow-md'
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1">
+                  <div className="bg-orange-500 text-black px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1">
                     <Star size={16} />
                     Mais Popular
                   </div>
@@ -87,15 +87,15 @@ const Plans = () => {
 
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-black mb-2">{plan.name}</h3>
-                <div className="text-3xl font-bold text-yellow-600 mb-2">{plan.price}</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">{plan.price}</div>
                 <p className="text-gray-600">{plan.description}</p>
               </div>
 
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center">
-                    <div className="bg-yellow-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                      <Check className="text-yellow-600" size={16} />
+                    <div className="bg-orange-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                      <Check className="text-orange-600" size={16} />
                     </div>
                     <span className="text-gray-700">{feature}</span>
                   </li>
@@ -106,7 +106,7 @@ const Plans = () => {
                 onClick={() => setIsStoreSelectorOpen(true)}
                 className={`w-full py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
                   plan.popular
-                    ? 'bg-yellow-500 hover:bg-yellow-600 text-black'
+                    ? 'bg-orange-500 hover:bg-orange-600 text-black'
                     : 'bg-black hover:bg-gray-800 text-white'
                 }`}
               >
@@ -126,7 +126,7 @@ const Plans = () => {
           </p>
           <button 
             onClick={() => setIsStoreSelectorOpen(true)}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block"
+            className="bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block"
           >
             Solicitar Orçamento Personalizado
           </button>
