@@ -27,7 +27,7 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            O que Nossos <span className="text-primary">Clientes</span> Dizem
+            O que Nossos <span className="text-[#fc9c22]">Clientes</span> Dizem
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A satisfação dos nossos clientes é nossa maior recompensa. 
