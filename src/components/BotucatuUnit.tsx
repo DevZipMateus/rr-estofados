@@ -26,7 +26,15 @@ const BotucatuUnit = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 2xl:gap-16 items-center">
           {/* Info */}
           <div className="order-1 lg:order-1">
-            <div className="bg-card rounded-2xl p-6 sm:p-8 xl:p-10 2xl:p-12 shadow-lg border">
+            <div className="bg-card rounded-2xl p-6 sm:p-8 xl:p-10 2xl:p-12 shadow-lg border relative overflow-hidden">
+              {/* Background Image */}
+              <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{
+              backgroundImage: `url('/lovable-uploads/a82a9939-d2a7-4134-9c3e-6689d6415d46.png')`
+            }} />
+              <div className="absolute inset-0 bg-card/90" />
+              
+              {/* Content */}
+              <div className="relative z-10">
               <div className="flex items-center mb-6 xl:mb-8">
                 <div className="bg-primary w-12 h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-full flex items-center justify-center mr-4">
                   <MapPin className="text-primary-foreground" size={24} />
@@ -37,35 +45,36 @@ const BotucatuUnit = () => {
                 </div>
               </div>
 
-              <div className="space-y-6 xl:space-y-8">
-                <div>
-                  <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
-                  <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground">{address}</p>
-                </div>
+               <div className="space-y-6 xl:space-y-8">
+                 <div>
+                   <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
+                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground">{address}</p>
+                 </div>
 
-                <div>
-                  <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Horário de Funcionamento</h4>
-                  <div className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground space-y-1">
-                    <p>Segunda à Sexta: 8h às 18h</p>
-                    <p>Sábado: 8h às 12h</p>
-                    <p>Domingo: Fechado</p>
-                  </div>
-                </div>
+                 <div>
+                   <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Horário de Funcionamento</h4>
+                   <div className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground space-y-1">
+                     <p>Segunda à Sexta: 8h às 18h</p>
+                     <p>Sábado: 8h às 12h</p>
+                     <p>Domingo: Fechado</p>
+                   </div>
+                 </div>
 
-                {/* View on Google Maps button */}
-                <div className="pt-2">
-                  <Button onClick={handleViewOnGoogleMaps} variant="outline" className="w-full mb-4 py-2 xl:py-3 2xl:py-4 text-sm xl:text-base 2xl:text-lg">
-                    <ExternalLink className="mr-2" size={16} />
-                    Ver no Google Maps
-                  </Button>
-                </div>
+                 {/* View on Google Maps button */}
+                 <div className="pt-2">
+                   <Button onClick={handleViewOnGoogleMaps} variant="outline" className="w-full mb-4 py-2 xl:py-3 2xl:py-4 text-sm xl:text-base 2xl:text-lg">
+                     <ExternalLink className="mr-2" size={16} />
+                     Ver no Google Maps
+                   </Button>
+                 </div>
 
-                <div className="pt-4">
-                  <Button onClick={handleWhatsAppContact} className="w-full btn-primary py-2 xl:py-3 2xl:py-4 text-sm xl:text-base 2xl:text-lg text-[#010101] bg-[#fc9c22]">
-                    <MessageCircle className="mr-2" size={20} />
-                    Entrar em Contato
-                  </Button>
-                </div>
+                 <div className="pt-4">
+                   <Button onClick={handleWhatsAppContact} className="w-full btn-primary py-2 xl:py-3 2xl:py-4 text-sm xl:text-base 2xl:text-lg text-[#010101] bg-[#fc9c22]">
+                     <MessageCircle className="mr-2" size={20} />
+                     Entrar em Contato
+                   </Button>
+                 </div>
+               </div>
               </div>
             </div>
           </div>
