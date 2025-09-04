@@ -41,7 +41,7 @@ const FloatingWhatsApp = () => {
           aria-label="Abrir WhatsApp"
         >
           <img 
-            src="/lovable-uploads/319a4dea-4839-4af3-9af4-df825e495eb3.png" 
+            src="/lovable-uploads/8cc5b6c6-3e8b-4210-b713-311b70357f6f.png" 
             alt="WhatsApp" 
             className={`${isMobile ? 'w-12 h-12' : 'w-14 h-14'}`}
           />

@@ -63,7 +63,7 @@ const Hero = () => {
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 xl:gap-3 text-base xl:text-lg 2xl:text-xl"
               >
                 <img 
-                  src="/lovable-uploads/319a4dea-4839-4af3-9af4-df825e495eb3.png" 
+                  src="/lovable-uploads/8cc5b6c6-3e8b-4210-b713-311b70357f6f.png" 
                   alt="WhatsApp" 
                   className={`${isMobile ? 'w-5 h-5' : 'w-6 h-6'}`}
                 />

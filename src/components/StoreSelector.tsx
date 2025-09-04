@@ -78,7 +78,7 @@ const StoreSelector: React.FC<StoreSelectorProps> = ({
                 </div>
               </div>
               <img 
-                src="/lovable-uploads/319a4dea-4839-4af3-9af4-df825e495eb3.png" 
+                src="/lovable-uploads/8cc5b6c6-3e8b-4210-b713-311b70357f6f.png" 
                 alt="WhatsApp" 
                 className="w-6 h-6"
               />
