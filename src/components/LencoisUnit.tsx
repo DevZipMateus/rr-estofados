@@ -40,20 +40,20 @@ const LencoisUnit = () => {
                     <MapPin className="text-primary-foreground" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-card-foreground">Nossa Localização</h3>
-                    <p className="text-muted-foreground">Fácil acesso e estacionamento</p>
+                    <h3 className="text-2xl font-bold text-black">Nossa Localização</h3>
+                    <p className="text-black">Fácil acesso e estacionamento</p>
                   </div>
                 </div>
 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="font-semibold text-card-foreground mb-2">Endereço</h4>
-                    <p className="text-muted-foreground">{address}</p>
+                    <h4 className="font-semibold text-black mb-2">Endereço</h4>
+                    <p className="text-black">{address}</p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-card-foreground mb-2">Horário de Funcionamento</h4>
-                    <div className="text-muted-foreground space-y-1">
+                    <h4 className="font-semibold text-black mb-2">Horário de Funcionamento</h4>
+                    <div className="text-black space-y-1">
                       <p>Segunda à Sexta: 8h às 18h</p>
                       <p>Sábado: 8h às 12h</p>
                       <p>Domingo: Fechado</p>

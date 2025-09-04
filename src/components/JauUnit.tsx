@@ -39,26 +39,26 @@ const JauUnit = () => {
                 <div className="bg-primary w-12 h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-full flex items-center justify-center mr-4">
                   <MapPin className="text-primary-foreground" size={24} />
                 </div>
-                <div>
-                  <h3 className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-card-foreground">Nossa Localização</h3>
-                  <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground">Fácil acesso e estacionamento</p>
-                </div>
+                 <div>
+                   <h3 className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-black">Nossa Localização</h3>
+                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-black">Fácil acesso e estacionamento</p>
+                 </div>
               </div>
 
               <div className="space-y-6 xl:space-y-8">
-                <div>
-                  <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
-                  <p className="text-sm sm:text-base xl:text-lg 2xl:text-5xl text-8xl text-zinc-950">{address}</p>
-                </div>
+                 <div>
+                   <h4 className="font-semibold text-black mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
+                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-black">{address}</p>
+                 </div>
 
-                <div>
-                  <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Horário de Funcionamento</h4>
-                  <div className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground space-y-1">
-                    <p>Segunda à Sexta: 8h às 18h</p>
-                    <p>Sábado: 8h às 12h</p>
-                    <p>Domingo: Fechado</p>
-                  </div>
-                </div>
+                 <div>
+                   <h4 className="font-semibold text-black mb-2 text-base xl:text-lg 2xl:text-xl">Horário de Funcionamento</h4>
+                   <div className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-black space-y-1">
+                     <p>Segunda à Sexta: 8h às 18h</p>
+                     <p>Sábado: 8h às 12h</p>
+                     <p>Domingo: Fechado</p>
+                   </div>
+                 </div>
 
                 {/* View on Google Maps button */}
                 <div className="pt-2">
