@@ -11,7 +11,7 @@ const Hero = () => {
       id="inicio" 
       className="pt-20 pb-16 bg-gradient-to-br from-gray-900/90 to-gray-800/90 relative"
       style={{
-        backgroundImage: 'url(/lovable-uploads/4fa4f1fb-53f6-472d-9d6c-17aa83142d35.png)',
+        backgroundImage: 'url(/lovable-uploads/179c4f47-0979-4040-acc7-d77e21b90ebc.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
