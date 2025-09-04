@@ -50,9 +50,9 @@ const About = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8 2xl:gap-12 mb-16 xl:mb-24">
           {features.map((feature, index) => <div key={index} className="text-center p-6 xl:p-8 2xl:p-10 rounded-lg border bg-card hover:shadow-lg transition-shadow duration-200">
-              <div className="bg-primary/10 w-16 h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full flex items-center justify-center mx-auto mb-4 xl:mb-6">
-                <feature.icon size={32} className="text-primary bg-[t#] bg-[#fc9c22]/0" />
-              </div>
+            <div className="bg-[#fc9c22]/10 w-16 h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full flex items-center justify-center mx-auto mb-4 xl:mb-6">
+              <feature.icon size={32} className="text-[#fc9c22]" />
+            </div>
               <h3 className="text-lg xl:text-xl 2xl:text-2xl font-semibold text-card-foreground mb-3 xl:mb-4">{feature.title}</h3>
               <p className="text-sm xl:text-base 2xl:text-lg text-muted-foreground">{feature.description}</p>
             </div>)}

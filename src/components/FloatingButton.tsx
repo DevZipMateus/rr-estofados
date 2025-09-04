@@ -31,21 +31,21 @@ const FloatingButton = () => {
           href="https://wa.me/5511987654321" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
+          className="flex items-center bg-black text-[#fc9c22] px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">WhatsApp</span>
         </a>
         
         <a 
           href="tel:+5511987654321" 
-          className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
+          className="flex items-center bg-black text-[#fc9c22] px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">Ligar</span>
         </a>
         
         <a 
           href="mailto:contato@contabilidade.com" 
-          className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
+          className="flex items-center bg-black text-[#fc9c22] px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">E-mail</span>
         </a>
@@ -55,7 +55,7 @@ const FloatingButton = () => {
       <button
         onClick={toggleMenu}
         className={`${isMobile ? 'p-3' : 'p-4'} rounded-full flex items-center justify-center transition-all duration-300 
-          ${isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-amber-400 hover:bg-amber-500'} 
+          ${isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-[#fc9c22] hover:bg-[#fc9c22]/90'} 
           ${isOpen ? 'text-white' : 'text-black'} 
           ${isPulsing && !isOpen ? 'animate-pulse' : ''}
           transform hover:scale-105 active:scale-95 shadow-lg`}
@@ -63,7 +63,7 @@ const FloatingButton = () => {
         style={{
           boxShadow: isOpen 
             ? '0 4px 12px rgba(239, 68, 68, 0.4)' 
-            : '0 4px 12px rgba(251, 191, 36, 0.4)'
+            : '0 4px 12px rgba(252, 156, 34, 0.4)'
         }}
       >
         {isOpen ? (
