@@ -1,8 +1,10 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Palette, Wrench, Truck, Shield } from 'lucide-react';
+import StoreSelector from './StoreSelector';
 
 const Services = () => {
+  const [isStoreSelectorOpen, setIsStoreSelectorOpen] = useState(false);
   const services = [
     {
       icon: Palette,
@@ -83,17 +85,20 @@ const Services = () => {
             <p className="text-xl mb-8 opacity-90">
               Entre em contato conosco e descubra como podemos criar o sofá perfeito para você.
             </p>
-            <a 
-              href="https://wa.me/5514998473439" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <button 
+              onClick={() => setIsStoreSelectorOpen(true)}
               className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
             >
               Solicitar Orçamento Gratuito
-            </a>
+            </button>
           </div>
         </div>
       </div>
+      
+      <StoreSelector 
+        isOpen={isStoreSelectorOpen}
+        onClose={() => setIsStoreSelectorOpen(false)}
+      />
     </section>
   );
 };

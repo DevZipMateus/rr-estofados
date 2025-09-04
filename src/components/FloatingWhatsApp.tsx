@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
+import StoreSelector from './StoreSelector';
 
 const FloatingWhatsApp = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isStoreSelectorOpen, setIsStoreSelectorOpen] = useState(false);
   const isMobile = useIsMobile();
   
   useEffect(() => {
@@ -19,7 +21,7 @@ const FloatingWhatsApp = () => {
   }, []);
   
   const handleClick = () => {
-    window.open('https://wa.me/551436266146?text=Olá! Gostaria de solicitar um orçamento para sofá personalizado.', '_blank');
+    setIsStoreSelectorOpen(true);
   };
   
   if (!isVisible) return null;
@@ -42,6 +44,11 @@ const FloatingWhatsApp = () => {
           <MessageCircle size={isMobile ? 24 : 28} />
         </button>
       </div>
+      
+      <StoreSelector 
+        isOpen={isStoreSelectorOpen}
+        onClose={() => setIsStoreSelectorOpen(false)}
+      />
     </div>
   );
 };

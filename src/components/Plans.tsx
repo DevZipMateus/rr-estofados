@@ -1,8 +1,10 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Check, Star } from 'lucide-react';
+import StoreSelector from './StoreSelector';
 
 const Plans = () => {
+  const [isStoreSelectorOpen, setIsStoreSelectorOpen] = useState(false);
   const plans = [
     {
       name: "Básico",
@@ -100,19 +102,15 @@ const Plans = () => {
                 ))}
               </ul>
 
-              <button className={`w-full py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
-                plan.popular
-                  ? 'bg-yellow-500 hover:bg-yellow-600 text-black'
-                  : 'bg-black hover:bg-gray-800 text-white'
-              }`}>
-                <a 
-                  href="https://wa.me/5514998473439" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block w-full h-full"
-                >
-                  Escolher Plano
-                </a>
+              <button 
+                onClick={() => setIsStoreSelectorOpen(true)}
+                className={`w-full py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+                  plan.popular
+                    ? 'bg-yellow-500 hover:bg-yellow-600 text-black'
+                    : 'bg-black hover:bg-gray-800 text-white'
+                }`}
+              >
+                Escolher Plano
               </button>
             </div>
           ))}
@@ -126,16 +124,19 @@ const Plans = () => {
           <p className="text-gray-600 mb-6">
             Criamos soluções sob medida para projetos especiais e necessidades específicas.
           </p>
-          <a 
-            href="https://wa.me/5514998473439" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <button 
+            onClick={() => setIsStoreSelectorOpen(true)}
             className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block"
           >
             Solicitar Orçamento Personalizado
-          </a>
+          </button>
         </div>
       </div>
+      
+      <StoreSelector 
+        isOpen={isStoreSelectorOpen}
+        onClose={() => setIsStoreSelectorOpen(false)}
+      />
     </section>
   );
 };

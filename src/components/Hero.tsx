@@ -1,10 +1,13 @@
 
 import React from 'react';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
+import { useState } from 'react';
+import StoreSelector from './StoreSelector';
 
 const Hero = () => {
   const isMobile = useIsMobile();
+  const [isStoreSelectorOpen, setIsStoreSelectorOpen] = useState(false);
 
   return (
     <section 
@@ -55,15 +58,13 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 xl:gap-6 justify-center lg:justify-start">
-              <a 
-                href="https://wa.me/551436266146" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => setIsStoreSelectorOpen(true)}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 xl:gap-3 text-base xl:text-lg 2xl:text-xl"
               >
-                <Phone size={isMobile ? 20 : 24} />
+                <MessageCircle size={isMobile ? 20 : 24} />
                 Solicitar Orçamento
-              </a>
+              </button>
               <a 
                 href="#servicos" 
                 className="bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 xl:gap-3 text-base xl:text-lg 2xl:text-xl"
@@ -97,6 +98,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      <StoreSelector 
+        isOpen={isStoreSelectorOpen}
+        onClose={() => setIsStoreSelectorOpen(false)}
+      />
     </section>
   );
 };

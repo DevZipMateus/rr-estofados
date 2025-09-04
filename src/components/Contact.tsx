@@ -4,8 +4,10 @@ import { Phone, Mail, MessageCircle, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
+import StoreSelector from './StoreSelector';
 
 const Contact = () => {
+  const [isStoreSelectorOpen, setIsStoreSelectorOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,8 +33,8 @@ const Contact = () => {
       `Telefone: ${formData.phone}%0A` +
       `Mensagem: ${formData.message}`;
     
-    // Open WhatsApp with the message
-    window.open(`https://wa.me/5514998473439?text=${whatsappMessage}`, '_blank');
+    // Open store selector with the custom message
+    setIsStoreSelectorOpen(true);
   };
 
   return (
@@ -128,10 +130,8 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-card-foreground mb-6">Contato Rápido</h3>
               
               <div className="space-y-6">
-                <a 
-                  href="https://wa.me/5514998473439" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => setIsStoreSelectorOpen(true)}
                   className="flex items-center p-4 bg-green-50 hover:bg-green-100 rounded-lg transition-colors group border"
                 >
                   <div className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
@@ -139,9 +139,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-card-foreground group-hover:text-green-600">WhatsApp</h4>
-                    <p className="text-muted-foreground">(14) 99847-3439</p>
+                    <p className="text-muted-foreground">Clique para escolher a loja</p>
                   </div>
-                </a>
+                </button>
 
                 <a 
                   href="tel:+5514998473439"
@@ -180,14 +180,12 @@ const Contact = () => {
                 Respondemos todas as mensagens em até 2 horas durante nosso horário de funcionamento.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="https://wa.me/5514998473439" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={() => setIsStoreSelectorOpen(true)}
                   className="btn-primary text-center"
                 >
                   WhatsApp
-                </a>
+                </button>
                 <a 
                   href="tel:+5514998473439"
                   className="btn-secondary text-center"
@@ -199,6 +197,17 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      <StoreSelector 
+        isOpen={isStoreSelectorOpen}
+        onClose={() => setIsStoreSelectorOpen(false)}
+        message={`Olá! Gostaria de solicitar um orçamento:
+
+Nome: ${formData.name}
+Email: ${formData.email}
+Telefone: ${formData.phone}
+Mensagem: ${formData.message}`}
+      />
     </section>
   );
 };
