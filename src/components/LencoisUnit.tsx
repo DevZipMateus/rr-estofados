@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle, MapPin, ExternalLink } from 'lucide-react';
 import { Button } from './ui/button';
@@ -32,52 +31,64 @@ const LencoisUnit = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Info */}
           <div className="order-1 lg:order-1">
-            <div className="bg-card rounded-2xl p-8 shadow-lg border">
-              <div className="flex items-center mb-6">
-                <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                  <MapPin className="text-primary-foreground" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-card-foreground">Nossa Localização</h3>
-                  <p className="text-muted-foreground">Fácil acesso e estacionamento</p>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-card-foreground mb-2">Endereço</h4>
-                  <p className="text-muted-foreground">{address}</p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-card-foreground mb-2">Horário de Funcionamento</h4>
-                  <div className="text-muted-foreground space-y-1">
-                    <p>Segunda à Sexta: 8h às 18h</p>
-                    <p>Sábado: 8h às 12h</p>
-                    <p>Domingo: Fechado</p>
+            <div className="bg-card rounded-2xl p-8 shadow-lg border relative overflow-hidden">
+              {/* Background Image */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-20"
+                style={{
+                  backgroundImage: `url('/lovable-uploads/dab22f34-5f28-4c05-96b8-36ef2f16c5c2.png')`
+                }}
+              />
+              <div className="absolute inset-0 bg-card/90" />
+              
+              {/* Content */}
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <MapPin className="text-primary-foreground" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-card-foreground">Nossa Localização</h3>
+                    <p className="text-muted-foreground">Fácil acesso e estacionamento</p>
                   </div>
                 </div>
 
-                {/* View on Google Maps button */}
-                <div className="pt-2">
-                  <Button 
-                    onClick={handleViewOnGoogleMaps}
-                    variant="outline"
-                    className="w-full mb-4"
-                  >
-                    <ExternalLink className="mr-2" size={16} />
-                    Ver no Google Maps
-                  </Button>
-                </div>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mb-2">Endereço</h4>
+                    <p className="text-muted-foreground">{address}</p>
+                  </div>
 
-                <div className="pt-4">
-                  <Button 
-                    onClick={handleWhatsAppContact}
-                    className="w-full btn-primary"
-                  >
-                    <MessageCircle className="mr-2" size={20} />
-                    Entrar em Contato
-                  </Button>
+                  <div>
+                    <h4 className="font-semibold text-card-foreground mb-2">Horário de Funcionamento</h4>
+                    <div className="text-muted-foreground space-y-1">
+                      <p>Segunda à Sexta: 8h às 18h</p>
+                      <p>Sábado: 8h às 12h</p>
+                      <p>Domingo: Fechado</p>
+                    </div>
+                  </div>
+
+                  {/* View on Google Maps button */}
+                  <div className="pt-2">
+                    <Button 
+                      onClick={handleViewOnGoogleMaps}
+                      variant="outline"
+                      className="w-full mb-4"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      Ver no Google Maps
+                    </Button>
+                  </div>
+
+                  <div className="pt-4">
+                    <Button 
+                      onClick={handleWhatsAppContact}
+                      className="w-full btn-primary"
+                    >
+                      <MessageCircle className="mr-2" size={20} />
+                      Entrar em Contato
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
