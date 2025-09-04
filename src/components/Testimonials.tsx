@@ -39,9 +39,9 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => <div key={index} className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200 border">
               <div className="flex items-center mb-4">
-                <Quote className="text-primary mr-2" size={20} />
+                <Quote className="text-[#fc9c22] mr-2" size={20} />
                 <div className="flex">
-                  {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="text-primary fill-current" size={16} />)}
+                  {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="text-[#fc9c22] fill-current" size={16} />)}
                 </div>
               </div>
               
