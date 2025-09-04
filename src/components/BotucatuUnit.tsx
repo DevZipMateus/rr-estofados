@@ -28,7 +28,7 @@ const BotucatuUnit = () => {
           <div className="order-1 lg:order-1">
             <div className="bg-card rounded-2xl p-6 sm:p-8 xl:p-10 2xl:p-12 shadow-lg border relative overflow-hidden">
               {/* Background Image */}
-              <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{
+              <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
               backgroundImage: `url('/lovable-uploads/a82a9939-d2a7-4134-9c3e-6689d6415d46.png')`
             }} />
               <div className="absolute inset-0 bg-card/90" />

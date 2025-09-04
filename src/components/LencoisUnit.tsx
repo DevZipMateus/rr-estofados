@@ -28,7 +28,7 @@ const LencoisUnit = () => {
           <div className="order-1 lg:order-1">
             <div className="bg-card rounded-2xl p-8 shadow-lg border relative overflow-hidden">
               {/* Background Image */}
-              <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{
+              <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
               backgroundImage: `url('/lovable-uploads/9ec12772-6bec-44dd-b534-14a3b08a2d22.png')`
             }} />
               <div className="absolute inset-0 bg-card/90" />
