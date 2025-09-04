@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Palette, Wrench, Truck, Shield } from 'lucide-react';
+import { Palette, Truck, Shield } from 'lucide-react';
 import StoreSelector from './StoreSelector';
 
 const Services = () => {
@@ -8,27 +8,21 @@ const Services = () => {
   const services = [
     {
       icon: Palette,
-      title: "Design Personalizado",
-      description: "Criamos sofás únicos seguindo seu estilo e necessidades específicas",
-      features: ["Escolha de tecidos premium", "Cores personalizadas", "Medidas sob medida", "Estilo exclusivo"]
-    },
-    {
-      icon: Wrench,
-      title: "Reforma e Restauro",
-      description: "Damos nova vida ao seu sofá antigo com qualidade profissional",
-      features: ["Troca de espuma", "Novo revestimento", "Estrutura reforçada", "Acabamento impecável"]
+      title: "Trabalhamos com sofás a pronta Entrega e mesas de jantares a pronta entrega",
+      description: "Oferecemos uma variedade de sofás e mesas de jantar prontos para entrega imediata",
+      features: ["Sofás prontos para entrega", "Mesas de jantar disponíveis", "Qualidade garantida", "Estoque variado"]
     },
     {
       icon: Truck,
       title: "Entrega e Montagem",
-      description: "Levamos seu sofá até você com cuidado e instalação completa",
-      features: ["Entrega gratuita", "Montagem incluída", "Proteção durante transporte", "Horário flexível"]
+      description: "Levamos seu móvel até você com cuidado e instalação completa",
+      features: ["Entrega valor a combinar", "Montagem gratuita", "Proteção durante transporte", "Horário flexível"]
     },
     {
       icon: Shield,
-      title: "Garantia Total",
-      description: "Oferecemos garantia completa em todos os nossos produtos",
-      features: ["Garantia de 1 ano", "Suporte pós-venda", "Manutenção gratuita", "Peças de reposição"]
+      title: "Garantia",
+      description: "Oferecemos garantia dentro das normas do código do consumidor",
+      features: ["Garantia conforme código do consumidor", "Suporte pós-venda", "Manutenção pós-garantia valores a combinar"]
     }
   ];
 
@@ -40,14 +34,14 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Nossos <span className="text-[#fc9c22]">Serviços</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Oferecemos uma gama completa de serviços para atender todas as suas necessidades 
-            em estofados e móveis personalizados.
-          </p>
+           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+             Oferecemos sofás e mesas de jantar prontos para entrega, 
+             além de montagem gratuita e garantia conforme o código do consumidor.
+           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 
@@ -83,7 +77,7 @@ const Services = () => {
               Pronto para Transformar seu Ambiente?
             </h3>
             <p className="text-xl mb-8 opacity-90">
-              Entre em contato conosco e descubra como podemos criar o sofá perfeito para você.
+              Conheça nossos sofás e mesas de jantar prontos para entrega e transforme seu ambiente.
             </p>
             <button 
               onClick={() => setIsStoreSelectorOpen(true)}
