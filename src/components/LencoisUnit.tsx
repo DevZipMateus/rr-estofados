@@ -31,7 +31,7 @@ const LencoisUnit = () => {
               <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
               backgroundImage: `url('/lovable-uploads/9ec12772-6bec-44dd-b534-14a3b08a2d22.png')`
             }} />
-              <div className="absolute inset-0 bg-card/90" />
+              <div className="absolute inset-0 bg-transparent" />
               
               {/* Content */}
               <div className="relative z-10">

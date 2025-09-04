@@ -31,7 +31,7 @@ const BotucatuUnit = () => {
               <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
               backgroundImage: `url('/lovable-uploads/a82a9939-d2a7-4134-9c3e-6689d6415d46.png')`
             }} />
-              <div className="absolute inset-0 bg-card/90" />
+              <div className="absolute inset-0 bg-transparent" />
               
               {/* Content */}
               <div className="relative z-10">

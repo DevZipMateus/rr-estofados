@@ -31,7 +31,7 @@ const JauUnit = () => {
               <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
               backgroundImage: `url('/lovable-uploads/58ba026c-d2f8-49d1-a74b-4eee9845116d.png')`
             }} />
-              <div className="absolute inset-0 bg-card/90" />
+              <div className="absolute inset-0 bg-transparent" />
               
                {/* Content */}
                <div className="relative z-10">
@@ -48,7 +48,7 @@ const JauUnit = () => {
               <div className="space-y-6 xl:space-y-8">
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
-                  <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-muted-foreground">{address}</p>
+                  <p className="text-sm sm:text-base xl:text-lg 2xl:text-5xl text-8xl text-zinc-950">{address}</p>
                 </div>
 
                 <div>
