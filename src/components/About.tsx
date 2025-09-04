@@ -72,7 +72,7 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-8 xl:gap-12 2xl:gap-16">
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-2">500+</div>
+                <div className="text-3xl sm:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mb-2">5000+</div>
                 <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-white">Sofás Produzidos</p>
               </div>
               <div className="text-center">
