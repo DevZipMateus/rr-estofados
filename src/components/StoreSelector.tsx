@@ -6,7 +6,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 interface Store {
   name: string;
@@ -77,7 +77,11 @@ const StoreSelector: React.FC<StoreSelectorProps> = ({
                   <div className="text-sm text-muted-foreground">{store.phone}</div>
                 </div>
               </div>
-              <MessageCircle className="h-5 w-5 text-green-500" />
+              <img 
+                src="/lovable-uploads/319a4dea-4839-4af3-9af4-df825e495eb3.png" 
+                alt="WhatsApp" 
+                className="w-6 h-6"
+              />
             </Button>
           ))}
         </div>

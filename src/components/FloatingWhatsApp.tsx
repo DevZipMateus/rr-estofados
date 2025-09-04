@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { MessageCircle } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 import StoreSelector from './StoreSelector';
 
@@ -38,10 +37,14 @@ const FloatingWhatsApp = () => {
         {/* Button */}
         <button
           onClick={handleClick}
-          className={`${isMobile ? 'p-3' : 'p-4'} bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-200 hover:scale-110 active:scale-95`}
+          className={`${isMobile ? 'p-3' : 'p-4'} bg-transparent rounded-full shadow-lg transition-all duration-200 hover:scale-110 active:scale-95`}
           aria-label="Abrir WhatsApp"
         >
-          <MessageCircle size={isMobile ? 24 : 28} />
+          <img 
+            src="/lovable-uploads/319a4dea-4839-4af3-9af4-df825e495eb3.png" 
+            alt="WhatsApp" 
+            className={`${isMobile ? 'w-12 h-12' : 'w-14 h-14'}`}
+          />
         </button>
       </div>
       

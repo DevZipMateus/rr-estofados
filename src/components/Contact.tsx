@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Phone, Mail, MessageCircle, Send } from 'lucide-react';
+import { Phone, Mail, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
@@ -135,7 +135,11 @@ const Contact = () => {
                   className="flex items-center p-4 bg-green-50 hover:bg-green-100 rounded-lg transition-colors group border"
                 >
                   <div className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                    <MessageCircle className="text-white" size={24} />
+                    <img 
+                      src="/lovable-uploads/319a4dea-4839-4af3-9af4-df825e495eb3.png" 
+                      alt="WhatsApp" 
+                      className="w-6 h-6"
+                    />
                   </div>
                   <div>
                     <h4 className="font-semibold text-card-foreground group-hover:text-green-600">WhatsApp</h4>
