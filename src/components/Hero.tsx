@@ -32,9 +32,31 @@ const Hero = () => {
               Desde 2020 criamos sofás únicos e personalizados, feitos com materiais premium para transformar seu ambiente com conforto e estilo.
             </p>
             
+            {/* Contact Information */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 xl:p-6 2xl:p-8 mb-8 xl:mb-12">
+              <h3 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold text-white mb-4 xl:mb-6">Nossas Lojas:</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 xl:gap-6 text-sm xl:text-base 2xl:text-lg">
+                <div className="text-center sm:text-left">
+                  <h4 className="font-semibold text-orange-500 mb-2">Jaú</h4>
+                  <p className="text-white">Tel: (14) 3626-6146</p>
+                  <p className="text-white">WhatsApp: (14) 3626-6146</p>
+                </div>
+                <div className="text-center sm:text-left">
+                  <h4 className="font-semibold text-orange-500 mb-2">Lençóis Paulista</h4>
+                  <p className="text-white">Tel: (14) 3263-1798</p>
+                  <p className="text-white">WhatsApp: (14) 99781-7532</p>
+                </div>
+                <div className="text-center sm:text-left">
+                  <h4 className="font-semibold text-orange-500 mb-2">Botucatu</h4>
+                  <p className="text-white">Tel: (14) 3882-7728</p>
+                  <p className="text-white">WhatsApp: (14) 99757-6800</p>
+                </div>
+              </div>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 xl:gap-6 justify-center lg:justify-start">
               <a 
-                href="https://wa.me/5514998473439" 
+                href="https://wa.me/551436266146" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 xl:gap-3 text-base xl:text-lg 2xl:text-xl"

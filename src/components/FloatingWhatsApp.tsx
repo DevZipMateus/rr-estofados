@@ -19,7 +19,7 @@ const FloatingWhatsApp = () => {
   }, []);
   
   const handleClick = () => {
-    window.open('https://wa.me/5514998473439?text=Olá! Gostaria de solicitar um orçamento para sofá personalizado.', '_blank');
+    window.open('https://wa.me/551436266146?text=Olá! Gostaria de solicitar um orçamento para sofá personalizado.', '_blank');
   };
   
   if (!isVisible) return null;
