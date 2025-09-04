@@ -19,24 +19,64 @@ const Instagram = () => {
           </p>
         </div>
 
-        <div className="text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 md:p-12 xl:p-16 2xl:p-20 text-white">
-          <div className="max-w-2xl 2xl:max-w-3xl mx-auto">
-            <InstagramIcon className="w-16 h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 mx-auto mb-6 xl:mb-8" />
-            <h3 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 xl:mb-6">
-              @rrestofados_sofasbauru
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-8">
+          {/* Botucatu */}
+          <div className="text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-6 md:p-8 xl:p-12 text-white">
+            <InstagramIcon className="w-12 h-12 xl:w-16 xl:h-16 mx-auto mb-4 xl:mb-6" />
+            <h3 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold mb-3 xl:mb-4">
+              @rrestofados_sofasbotucatu
             </h3>
-            <p className="text-base sm:text-lg md:text-xl xl:text-2xl 2xl:text-3xl mb-8 xl:mb-12 opacity-90">
-              Não perca nenhuma novidade! Siga-nos no Instagram e veja nossos trabalhos mais recentes, 
-              dicas de decoração e muito mais.
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl mb-6 xl:mb-8 opacity-90">
+              Unidade Botucatu
             </p>
             <Button 
-              size="lg" 
-              className="bg-white text-orange-500 hover:bg-gray-100 font-semibold px-8 py-3 xl:px-10 xl:py-4 2xl:px-12 2xl:py-5 rounded-full transition-all duration-300 hover:scale-105 text-base xl:text-lg 2xl:text-xl"
-              onClick={() => window.open('https://www.instagram.com/rrestofados_sofasbauru?igsh=bGtsbDd3bTU4cjNi&utm_source=qr', '_blank')}
+              size="sm"
+              className="bg-white text-orange-500 hover:bg-gray-100 font-semibold px-4 py-2 xl:px-6 xl:py-3 rounded-full transition-all duration-300 hover:scale-105 text-sm xl:text-base"
+              onClick={() => window.open('https://www.instagram.com/rrestofados_sofasbotucatu/', '_blank')}
             >
-              <InstagramIcon className="w-5 h-5 xl:w-6 xl:h-6 mr-2" />
-              Seguir no Instagram
-              <ExternalLink className="w-4 h-4 xl:w-5 xl:h-5 ml-2" />
+              <InstagramIcon className="w-4 h-4 mr-2" />
+              Seguir
+              <ExternalLink className="w-3 h-3 ml-2" />
+            </Button>
+          </div>
+
+          {/* Jaú */}
+          <div className="text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-6 md:p-8 xl:p-12 text-white">
+            <InstagramIcon className="w-12 h-12 xl:w-16 xl:h-16 mx-auto mb-4 xl:mb-6" />
+            <h3 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold mb-3 xl:mb-4">
+              @rrestofados_sofasjau
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl mb-6 xl:mb-8 opacity-90">
+              Unidade Jaú
+            </p>
+            <Button 
+              size="sm"
+              className="bg-white text-orange-500 hover:bg-gray-100 font-semibold px-4 py-2 xl:px-6 xl:py-3 rounded-full transition-all duration-300 hover:scale-105 text-sm xl:text-base"
+              onClick={() => window.open('https://www.instagram.com/rrestofados_sofasjau/', '_blank')}
+            >
+              <InstagramIcon className="w-4 h-4 mr-2" />
+              Seguir
+              <ExternalLink className="w-3 h-3 ml-2" />
+            </Button>
+          </div>
+
+          {/* Lençóis Paulista */}
+          <div className="text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-6 md:p-8 xl:p-12 text-white">
+            <InstagramIcon className="w-12 h-12 xl:w-16 xl:h-16 mx-auto mb-4 xl:mb-6" />
+            <h3 className="text-lg sm:text-xl md:text-2xl xl:text-3xl font-bold mb-3 xl:mb-4">
+              @rrestofados_sofaslencois
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg xl:text-xl mb-6 xl:mb-8 opacity-90">
+              Unidade Lençóis Paulista
+            </p>
+            <Button 
+              size="sm"
+              className="bg-white text-orange-500 hover:bg-gray-100 font-semibold px-4 py-2 xl:px-6 xl:py-3 rounded-full transition-all duration-300 hover:scale-105 text-sm xl:text-base"
+              onClick={() => window.open('https://www.instagram.com/rrestofados_sofaslencois/', '_blank')}
+            >
+              <InstagramIcon className="w-4 h-4 mr-2" />
+              Seguir
+              <ExternalLink className="w-3 h-3 ml-2" />
             </Button>
           </div>
         </div>
