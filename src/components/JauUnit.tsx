@@ -26,8 +26,16 @@ const JauUnit = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 2xl:gap-16 items-center">
           {/* Info */}
           <div className="order-1 lg:order-1">
-            <div className="bg-card rounded-2xl p-6 sm:p-8 xl:p-10 2xl:p-12 shadow-lg border">
-              <div className="flex items-center mb-6 xl:mb-8">
+            <div className="bg-card rounded-2xl p-6 sm:p-8 xl:p-10 2xl:p-12 shadow-lg border relative overflow-hidden">
+              {/* Background Image */}
+              <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{
+              backgroundImage: `url('/lovable-uploads/58ba026c-d2f8-49d1-a74b-4eee9845116d.png')`
+            }} />
+              <div className="absolute inset-0 bg-card/90" />
+              
+               {/* Content */}
+               <div className="relative z-10">
+                 <div className="flex items-center mb-6 xl:mb-8">
                 <div className="bg-primary w-12 h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 rounded-full flex items-center justify-center mr-4">
                   <MapPin className="text-primary-foreground" size={24} />
                 </div>
@@ -65,6 +73,7 @@ const JauUnit = () => {
                     <MessageCircle className="mr-2" size={20} />
                     Entrar em Contato
                   </Button>
+                </div>
                 </div>
               </div>
             </div>
