@@ -67,7 +67,7 @@ const Header = () => {
             <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium text-sm lg:text-base xl:text-lg 2xl:text-xl">
               Depoimentos
             </a>
-            <a href="#unidade-bauru" onClick={(e) => handleNavClick(e, '#unidade-bauru')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium text-sm lg:text-base xl:text-lg 2xl:text-xl">
+            <a href="#unidade-jau" onClick={(e) => handleNavClick(e, '#unidade-jau')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium text-sm lg:text-base xl:text-lg 2xl:text-xl">
               Localização
             </a>
             <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium text-sm lg:text-base xl:text-lg 2xl:text-xl">
@@ -100,7 +100,7 @@ const Header = () => {
           <a href="#depoimentos" onClick={(e) => handleNavClick(e, '#depoimentos')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors text-base">
             Depoimentos
           </a>
-          <a href="#unidade-bauru" onClick={(e) => handleNavClick(e, '#unidade-bauru')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors text-base">
+          <a href="#unidade-jau" onClick={(e) => handleNavClick(e, '#unidade-jau')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors text-base">
             Localização
           </a>
           <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')} className="px-4 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md transition-colors text-base">

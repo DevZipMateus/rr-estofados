@@ -8,7 +8,7 @@ import Services from '../components/Services';
 import ProductShowcase from '../components/ProductShowcase';
 import Testimonials from '../components/Testimonials';
 import Instagram from '../components/Instagram';
-import BauruUnit from '../components/BauruUnit';
+
 import JauUnit from '../components/JauUnit';
 import LencoisUnit from '../components/LencoisUnit';
 import BotucatuUnit from '../components/BotucatuUnit';
@@ -32,7 +32,7 @@ const Index = () => {
         <ProductShowcase />
         <Testimonials />
         <Instagram />
-        <BauruUnit />
+        
         <JauUnit />
         <LencoisUnit />
         <BotucatuUnit />
