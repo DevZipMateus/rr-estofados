@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.instagram.com/rrestofados_sofasbauru" 
+                href="https://www.instagram.com/rrestofados" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-yellow-500 hover:bg-yellow-600 text-black p-2 rounded-full transition-colors duration-300"
@@ -28,28 +28,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Bauru Unit */}
-          <div>
-            <h4 className="text-xl font-semibold mb-6 text-yellow-500">Unidade Bauru</h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start">
-                <MapPin className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
-                <span>Av. Duque de Caxias, 253<br />Vila Mesquita, Bauru - SP</span>
-              </li>
-              <li className="flex items-start">
-                <Phone className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
-                <span>(14) 99847-3439</span>
-              </li>
-              <li className="flex items-start">
-                <Clock className="mr-2 mt-1 flex-shrink-0 text-yellow-500" size={16} />
-                <div>
-                  <p>Seg-Sex: 8h às 18h</p>
-                  <p>Sáb: 8h às 12h</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
           {/* Jaú Unit */}
           <div>
             <h4 className="text-xl font-semibold mb-6 text-yellow-500">Unidade Jaú</h4>
