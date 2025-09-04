@@ -31,7 +31,7 @@ const JauUnit = () => {
               <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
               backgroundImage: `url('/lovable-uploads/58ba026c-d2f8-49d1-a74b-4eee9845116d.png')`
             }} />
-              <div className="absolute inset-0 bg-transparent" />
+              <div className="absolute inset-0 bg-white/40" />
               
                {/* Content */}
                <div className="relative z-10">
@@ -40,20 +40,20 @@ const JauUnit = () => {
                   <MapPin className="text-primary-foreground" size={24} />
                 </div>
                  <div>
-                   <h3 className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-black">Nossa Localização</h3>
-                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-black">Fácil acesso e estacionamento</p>
+                   <h3 className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900">Nossa Localização</h3>
+                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-gray-900">Fácil acesso e estacionamento</p>
                  </div>
               </div>
 
               <div className="space-y-6 xl:space-y-8">
                  <div>
-                   <h4 className="font-semibold text-black mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
-                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-black">{address}</p>
+                   <h4 className="font-semibold text-gray-900 mb-2 text-base xl:text-lg 2xl:text-xl">Endereço</h4>
+                   <p className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-gray-900">{address}</p>
                  </div>
 
                  <div>
-                   <h4 className="font-semibold text-black mb-2 text-base xl:text-lg 2xl:text-xl">Horário de Funcionamento</h4>
-                   <div className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-black space-y-1">
+                   <h4 className="font-semibold text-gray-900 mb-2 text-base xl:text-lg 2xl:text-xl">Horário de Funcionamento</h4>
+                   <div className="text-sm sm:text-base xl:text-lg 2xl:text-xl text-gray-900 space-y-1">
                      <p>Segunda à Sexta: 8h às 18h</p>
                      <p>Sábado: 8h às 12h</p>
                      <p>Domingo: Fechado</p>
