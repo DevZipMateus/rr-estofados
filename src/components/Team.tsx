@@ -39,7 +39,7 @@ const Team = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-corporate-orange/10 text-corporate-orange font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Nossa Equipe
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -70,19 +70,19 @@ const Team = () => {
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                <p className="text-corporate-blue mb-4">{member.role}</p>
+                <p className="text-corporate-orange mb-4">{member.role}</p>
                 
                 {/* Social Icons */}
                 <div className="flex space-x-3">
                   <a 
                     href="#" 
-                    className="bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue p-2 rounded-full transition-colors duration-300"
+                    className="bg-gray-100 hover:bg-corporate-orange/10 text-gray-600 hover:text-corporate-orange p-2 rounded-full transition-colors duration-300"
                   >
                     <Linkedin size={18} />
                   </a>
                   <a 
                     href="#" 
-                    className="bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue p-2 rounded-full transition-colors duration-300"
+                    className="bg-gray-100 hover:bg-corporate-orange/10 text-gray-600 hover:text-corporate-orange p-2 rounded-full transition-colors duration-300"
                   >
                     <Mail size={18} />
                   </a>

@@ -149,13 +149,13 @@ const Contact = () => {
 
                 <a 
                   href="tel:+5514998473439"
-                  className="flex items-center p-4 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors group border"
+                  className="flex items-center p-4 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors group border"
                 >
-                  <div className="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <div className="bg-orange-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                     <Phone className="text-white" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-card-foreground group-hover:text-blue-600">Telefone</h4>
+                    <h4 className="font-semibold text-card-foreground group-hover:text-orange-600">Telefone</h4>
                     <p className="text-muted-foreground">(14) 99847-3439</p>
                   </div>
                 </a>

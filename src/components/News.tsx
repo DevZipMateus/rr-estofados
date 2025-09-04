@@ -35,7 +35,7 @@ const News = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-corporate-orange/10 text-corporate-orange font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Notícias e Artigos
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -72,7 +72,7 @@ const News = () => {
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-corporate-blue transition-colors duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-corporate-orange transition-colors duration-300">
                   <a href="#">{article.title}</a>
                 </h3>
                 
@@ -84,7 +84,7 @@ const News = () => {
                 {/* Read More */}
                 <a 
                   href="#" 
-                  className="inline-flex items-center text-corporate-blue hover:text-corporate-darkBlue font-medium transition-colors duration-300"
+                  className="inline-flex items-center text-corporate-orange hover:text-corporate-orange font-medium transition-colors duration-300"
                 >
                   Leia mais 
                   <ArrowRight size={16} className="ml-1" />

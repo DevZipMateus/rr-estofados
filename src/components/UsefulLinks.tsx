@@ -50,7 +50,7 @@ const UsefulLinks = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-corporate-orange/10 text-corporate-orange font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Links Úteis
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -70,8 +70,8 @@ const UsefulLinks = () => {
               style={{ animationDelay: category.delay }}
             >
               {/* Icon */}
-              <div className="bg-corporate-blue/10 p-4 rounded-lg inline-block mb-6">
-                <category.icon className="text-corporate-blue" size={24} />
+              <div className="bg-corporate-orange/10 p-4 rounded-lg inline-block mb-6">
+                <category.icon className="text-corporate-orange" size={24} />
               </div>
               
               {/* Title and Description */}
@@ -84,9 +84,9 @@ const UsefulLinks = () => {
                   <li key={index}>
                     <a 
                       href={link.url} 
-                      className="flex items-center text-gray-700 hover:text-corporate-blue transition-colors duration-300"
+                      className="flex items-center text-gray-700 hover:text-corporate-orange transition-colors duration-300"
                     >
-                      <span className="w-1.5 h-1.5 bg-corporate-blue rounded-full mr-2"></span>
+                      <span className="w-1.5 h-1.5 bg-corporate-orange rounded-full mr-2"></span>
                       {link.name}
                     </a>
                   </li>
@@ -96,7 +96,7 @@ const UsefulLinks = () => {
               {/* View All Link */}
               <a 
                 href="#" 
-                className="mt-6 inline-flex items-center text-corporate-blue hover:text-corporate-darkBlue font-medium transition-colors duration-300"
+                className="mt-6 inline-flex items-center text-corporate-orange hover:text-corporate-orange font-medium transition-colors duration-300"
               >
                 Ver todos os recursos
                 <ArrowRight size={16} className="ml-1" />
