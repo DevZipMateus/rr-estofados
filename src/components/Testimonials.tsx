@@ -65,9 +65,7 @@ const Testimonials = () => {
             <p className="text-xl mb-8 text-gray-300">
               Junte-se a centenas de clientes que já transformaram seus ambientes conosco.
             </p>
-            <a href="https://wa.me/5514998473439" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
-              Começar Meu Projeto
-            </a>
+            
           </div>
         </div>
       </div>
