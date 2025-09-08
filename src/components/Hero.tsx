@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 xl:gap-6 justify-center lg:justify-start">
               <button 
                 onClick={() => setIsStoreSelectorOpen(true)}
-                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 xl:gap-3 text-base xl:text-lg 2xl:text-xl"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-3 xl:gap-4 text-lg xl:text-xl 2xl:text-2xl shadow-lg hover:shadow-xl border-2 border-orange-500/30 hover:scale-105"
               >
                 <img 
                   src="/lovable-uploads/8cc5b6c6-3e8b-4210-b713-311b70357f6f.png" 
@@ -71,7 +71,7 @@ const Hero = () => {
               </button>
               <a 
                 href="#servicos" 
-                className="bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2 xl:gap-3 text-base xl:text-lg 2xl:text-xl"
+                className="bg-white hover:bg-gray-50 text-gray-900 border-2 border-gray-300 px-8 py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-3 xl:gap-4 text-lg xl:text-xl 2xl:text-2xl shadow-md hover:shadow-lg hover:scale-105"
               >
                 Nossos Serviços
                 <ArrowRight size={isMobile ? 20 : 24} />

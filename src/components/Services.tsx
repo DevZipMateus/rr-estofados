@@ -81,7 +81,7 @@ const Services = () => {
             </p>
             <button 
               onClick={() => setIsStoreSelectorOpen(true)}
-              className="bg-white hover:bg-gray-100 text-[#fc9c22] px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+              className="bg-white hover:bg-gray-50 text-[#fc9c22] px-10 py-5 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-3 shadow-lg hover:shadow-xl border-2 border-white/20 text-lg"
             >
               Solicitar Orçamento Gratuito
             </button>

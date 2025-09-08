@@ -62,14 +62,14 @@ const LencoisUnit = () => {
 
                   {/* View on Google Maps button */}
                   <div className="pt-2">
-                    <Button onClick={handleViewOnGoogleMaps} variant="outline" className="w-full mb-4">
+                    <Button onClick={handleViewOnGoogleMaps} variant="outline" className="w-full mb-4 py-4 xl:py-5 text-base xl:text-lg font-semibold rounded-xl border-2 hover:bg-gray-50 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105">
                       <ExternalLink className="mr-2" size={16} />
                       Ver no Google Maps
                     </Button>
                   </div>
 
                   <div className="pt-4">
-                    <Button onClick={handleWhatsAppContact} className="w-full btn-primary bg-[#fc9c22]">
+                    <Button onClick={handleWhatsAppContact} className="w-full bg-[#fc9c22] hover:bg-[#ea8a0f] text-white font-semibold py-4 xl:py-5 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#fc9c22]/30 hover:scale-105 text-base xl:text-lg">
                       <MessageCircle className="mr-2" size={20} />
                       Entrar em Contato
                     </Button>

@@ -96,7 +96,7 @@ const Instagram = () => {
                 <div className="mt-8">
                   <Button 
                     size="lg"
-                    className="bg-white/90 hover:bg-white text-gray-900 hover:text-gray-800 font-bold px-8 py-3 xl:px-10 xl:py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-base xl:text-lg group-hover:animate-bounce"
+                    className="bg-white/90 hover:bg-white text-gray-900 hover:text-gray-800 font-bold px-10 py-4 xl:px-12 xl:py-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl text-lg xl:text-xl group-hover:animate-bounce border-2 border-white/30"
                     onClick={() => window.open(store.url, '_blank')}
                   >
                     <InstagramIcon className="w-5 h-5 xl:w-6 xl:h-6 mr-3" />

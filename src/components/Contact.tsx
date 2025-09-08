@@ -70,7 +70,7 @@ const Contact = () => {
                 <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Descreva o que você precisa (tipo de sofá, tamanho, cor, etc.)" required rows={4} className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent" />
               </div>
 
-              <Button type="submit" className="w-full btn-primary bg-[#fc9c22]">
+              <Button type="submit" className="w-full bg-[#fc9c22] hover:bg-[#ea8a0f] text-white font-semibold py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#fc9c22]/30 hover:scale-105 text-lg">
                 <Send className="mr-2" size={20} />
                 Enviar Mensagem
               </Button>
@@ -91,10 +91,10 @@ const Contact = () => {
                 Respondemos todas as mensagens em até 2 horas durante nosso horário de funcionamento.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={() => setIsStoreSelectorOpen(true)} className="btn-primary text-center bg-[#fc9c22]">
+                <button onClick={() => setIsStoreSelectorOpen(true)} className="bg-[#fc9c22] hover:bg-[#ea8a0f] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#fc9c22]/30 hover:scale-105 text-lg text-center w-full">
                   WhatsApp
                 </button>
-                <a href="tel:+5514998473439" className="btn-secondary text-center">
+                <a href="tel:+5514998473439" className="bg-white hover:bg-gray-50 text-[#fc9c22] font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg border-2 border-[#fc9c22]/20 hover:scale-105 text-lg text-center block w-full">
                   Ligar Agora
                 </a>
               </div>
