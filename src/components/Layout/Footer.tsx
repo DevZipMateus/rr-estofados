@@ -84,12 +84,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="mt-6">
-              <div className="flex items-start">
-                <Mail className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
-                <span className="text-sm">rrestofados2@hotmail.com</span>
-              </div>
-            </div>
           </div>
         </div>
         
