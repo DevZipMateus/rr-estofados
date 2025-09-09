@@ -124,7 +124,7 @@ const ProductShowcase = () => {
               <div className="absolute bottom-4 right-4 z-10">
                 <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
                   <img 
-                    src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" 
+                    src="/lovable-uploads/179c4f47-0979-4040-acc7-d77e21b90ebc.png" 
                     alt="RRestofados Logo" 
                     className="w-12 h-12 object-contain"
                   />
