@@ -38,7 +38,10 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Phone className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
-                <span>(14) 3626-6146</span>
+                <div>
+                  <p>Tel Fixo: (14) 3626-6146</p>
+                  <p>WhatsApp: (14) 3626-6146</p>
+                </div>
               </li>
               <li className="flex items-start">
                 <Clock className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
@@ -60,7 +63,10 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Phone className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
-                <span>(14) 99781-7532</span>
+                <div>
+                  <p>Tel Fixo: (14) 3263-1798</p>
+                  <p>WhatsApp: (14) 99781-7532</p>
+                </div>
               </li>
               <li className="flex items-start">
                 <Clock className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
@@ -82,7 +88,10 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Phone className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
-                <span>(14) 99757-6800</span>
+                <div>
+                  <p>Tel Fixo: (14) 3882-7728</p>
+                  <p>WhatsApp: (14) 99757-6800</p>
+                </div>
               </li>
               <li className="flex items-start">
                 <Clock className="mr-2 mt-1 flex-shrink-0 text-orange-500" size={16} />
