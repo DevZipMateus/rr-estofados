@@ -101,7 +101,7 @@ const ProductShowcase = () => {
                 align: "start",
                 loop: true
               }} 
-              className="w-full"
+              className="w-full relative"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -119,6 +119,17 @@ const ProductShowcase = () => {
               </CarouselContent>
               <CarouselPrevious className="left-2 bg-card border shadow-lg" />
               <CarouselNext className="right-2 bg-card border shadow-lg" />
+              
+              {/* Logo pequena no canto inferior direito */}
+              <div className="absolute bottom-4 right-4 z-10">
+                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
+                  <img 
+                    src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" 
+                    alt="RRestofados Logo" 
+                    className="w-12 h-12 object-contain"
+                  />
+                </div>
+              </div>
             </Carousel>
           </div>
         </div>
