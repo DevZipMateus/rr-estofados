@@ -16,16 +16,6 @@ const Footer = () => {
               Especialistas em sofás personalizados desde 2020. Transformamos seu ambiente 
               com qualidade, conforto e estilo únicos.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://www.instagram.com/rrestofados" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-orange-500 hover:bg-orange-600 text-black p-2 rounded-full transition-colors duration-300"
-              >
-                <Instagram size={20} />
-              </a>
-            </div>
           </div>
           
           {/* Jaú Unit */}
