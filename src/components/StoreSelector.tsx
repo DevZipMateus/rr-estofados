@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { MapPin } from 'lucide-react';
+import { trackStoreSelection } from '@/utils/analytics';
 
 interface Store {
   name: string;
@@ -47,7 +48,8 @@ const StoreSelector: React.FC<StoreSelectorProps> = ({
   onClose, 
   message = "Olá! Gostaria de solicitar um orçamento para sofá personalizado." 
 }) => {
-  const handleStoreSelect = (whatsapp: string) => {
+  const handleStoreSelect = (whatsapp: string, storeName: string) => {
+    trackStoreSelection(storeName, whatsapp);
     window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`, '_blank');
     onClose();
   };
@@ -65,7 +67,7 @@ const StoreSelector: React.FC<StoreSelectorProps> = ({
           {stores.map((store, index) => (
             <Button
               key={index}
-              onClick={() => handleStoreSelect(store.whatsapp)}
+              onClick={() => handleStoreSelect(store.whatsapp, store.name)}
               variant="outline"
               className="w-full p-4 h-auto flex items-center justify-between hover:bg-green-50 hover:border-green-500 transition-colors"
             >

@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 import { useState } from 'react';
 import StoreSelector from './StoreSelector';
+import { trackCTAClick } from '@/utils/analytics';
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -59,7 +59,10 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 xl:gap-6 justify-center lg:justify-start">
               <button 
-                onClick={() => setIsStoreSelectorOpen(true)}
+                onClick={() => {
+                  trackCTAClick('Solicitar Orçamento', 'hero');
+                  setIsStoreSelectorOpen(true);
+                }}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 xl:px-10 xl:py-5 2xl:px-12 2xl:py-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-3 xl:gap-4 text-lg xl:text-xl 2xl:text-2xl shadow-lg hover:shadow-xl border-2 border-orange-500/30 hover:scale-105"
               >
                 <img 

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
 import StoreSelector from './StoreSelector';
+import { trackWhatsAppClick } from '@/utils/analytics';
 
 const FloatingWhatsApp = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,6 +21,7 @@ const FloatingWhatsApp = () => {
   }, []);
   
   const handleClick = () => {
+    trackWhatsAppClick('floating_button');
     setIsStoreSelectorOpen(true);
   };
   

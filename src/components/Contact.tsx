@@ -4,6 +4,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import StoreSelector from './StoreSelector';
+import { trackFormSubmission, trackWhatsAppClick, trackPhoneClick } from '@/utils/analytics';
 const Contact = () => {
   const [isStoreSelectorOpen, setIsStoreSelectorOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -24,6 +25,14 @@ const Contact = () => {
   };
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Track form submission
+    trackFormSubmission(
+      'contact',
+      !!formData.name,
+      !!formData.email,
+      !!formData.phone
+    );
 
     // Format WhatsApp message
     const whatsappMessage = `Olá! Gostaria de solicitar um orçamento:%0A%0A` + `Nome: ${formData.name}%0A` + `Email: ${formData.email}%0A` + `Telefone: ${formData.phone}%0A` + `Mensagem: ${formData.message}`;
@@ -91,10 +100,20 @@ const Contact = () => {
                 Respondemos todas as mensagens em até 2 horas durante nosso horário de funcionamento.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={() => setIsStoreSelectorOpen(true)} className="bg-[#fc9c22] hover:bg-[#ea8a0f] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#fc9c22]/30 hover:scale-105 text-lg text-center w-full">
+                <button 
+                  onClick={() => {
+                    trackWhatsAppClick('contact_section');
+                    setIsStoreSelectorOpen(true);
+                  }} 
+                  className="bg-[#fc9c22] hover:bg-[#ea8a0f] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#fc9c22]/30 hover:scale-105 text-lg text-center w-full"
+                >
                   WhatsApp
                 </button>
-                <a href="tel:+5514998473439" className="bg-white hover:bg-gray-50 text-[#fc9c22] font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg border-2 border-[#fc9c22]/20 hover:scale-105 text-lg text-center block w-full">
+                <a 
+                  href="tel:+5514998473439" 
+                  onClick={() => trackPhoneClick('contact_section')}
+                  className="bg-white hover:bg-gray-50 text-[#fc9c22] font-semibold py-4 px-8 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg border-2 border-[#fc9c22]/20 hover:scale-105 text-lg text-center block w-full"
+                >
                   Ligar Agora
                 </a>
               </div>
